@@ -158,6 +158,7 @@ exclude:
   - gulpfile.js
   - node_modules
   - '*.json'
+  - '*.png'
 
 jekyll-archives:
   enabled: [categories, tags]
