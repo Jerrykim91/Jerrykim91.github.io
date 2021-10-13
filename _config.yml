@@ -10,7 +10,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://jerrykim91.github.io'
-baseurl:          '/'
+baseurl:          '/Jerry's CodeBook!'
 #'/jekyll-gitbook'
 rss:              RSS
 
