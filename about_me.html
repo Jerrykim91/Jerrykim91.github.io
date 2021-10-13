@@ -1,0 +1,1243 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>김효원_Hyowon Kim. </title>
+	<style>
+		/* cspell:disable-file */
+		/* webkit printing magic: print all background colors */
+		html {
+			-webkit-print-color-adjust: exact;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-print-color-adjust: exact;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		@media only screen {
+			body {
+				margin: 2em auto;
+				max-width: 900px;
+				color: rgb(55, 53, 47);
+			}
+		}
+
+		body {
+			line-height: 1.5;
+			white-space: pre-wrap;
+		}
+
+		a,
+		a.visited {
+			color: inherit;
+			text-decoration: underline;
+		}
+
+		.pdf-relative-link-path {
+			font-size: 80%;
+			color: #444;
+		}
+
+		h1,
+		h2,
+		h3 {
+			letter-spacing: -0.01em;
+			line-height: 1.2;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.page-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 0.75em;
+		}
+
+		h1 {
+			font-size: 1.875rem;
+			margin-top: 1.875rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			margin-top: 1.25rem;
+		}
+
+		.source {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 1.5em;
+			word-break: break-all;
+		}
+
+		.callout {
+			border-radius: 3px;
+			padding: 1rem;
+		}
+
+		figure {
+			margin: 1.25em 0;
+			page-break-inside: avoid;
+		}
+
+		figcaption {
+			opacity: 0.5;
+			font-size: 85%;
+			margin-top: 0.5em;
+		}
+
+		mark {
+			background-color: transparent;
+		}
+
+		.indented {
+			padding-left: 1.5em;
+		}
+
+		hr {
+			background: transparent;
+			display: block;
+			width: 100%;
+			height: 1px;
+			visibility: visible;
+			border: none;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		@media only print {
+			img {
+				max-height: 100vh;
+				object-fit: contain;
+			}
+		}
+
+		@page {
+			margin: 1in;
+		}
+
+		.collection-content {
+			font-size: 0.875rem;
+		}
+
+		.column-list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.column {
+			padding: 0 1em;
+		}
+
+		.column:first-child {
+			padding-left: 0;
+		}
+
+		.column:last-child {
+			padding-right: 0;
+		}
+
+		.table_of_contents-item {
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.3;
+			padding: 0.125rem;
+		}
+
+		.table_of_contents-indent-1 {
+			margin-left: 1.5rem;
+		}
+
+		.table_of_contents-indent-2 {
+			margin-left: 3rem;
+		}
+
+		.table_of_contents-indent-3 {
+			margin-left: 4.5rem;
+		}
+
+		.table_of_contents-link {
+			text-decoration: none;
+			opacity: 0.7;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgba(55, 53, 47, 0.09);
+			border-collapse: collapse;
+		}
+
+		table {
+			border-left: none;
+			border-right: none;
+		}
+
+		th,
+		td {
+			font-weight: normal;
+			padding: 0.25em 0.5em;
+			line-height: 1.5;
+			min-height: 1.5em;
+			text-align: left;
+		}
+
+		th {
+			color: rgba(55, 53, 47, 0.6);
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			margin-block-start: 0.6em;
+			margin-block-end: 0.6em;
+		}
+
+		li>ol:first-child,
+		li>ul:first-child {
+			margin-block-start: 0.6em;
+		}
+
+		ul>li {
+			list-style: disc;
+		}
+
+		ul.to-do-list {
+			text-indent: -1.7em;
+		}
+
+		ul.to-do-list>li {
+			list-style: none;
+		}
+
+		.to-do-children-checked {
+			text-decoration: line-through;
+			opacity: 0.375;
+		}
+
+		ul.toggle>li {
+			list-style: none;
+		}
+
+		ul {
+			padding-inline-start: 1.7em;
+		}
+
+		ul>li {
+			padding-left: 0.1em;
+		}
+
+		ol {
+			padding-inline-start: 1.6em;
+		}
+
+		ol>li {
+			padding-left: 0.2em;
+		}
+
+		.mono ol {
+			padding-inline-start: 2em;
+		}
+
+		.mono ol>li {
+			text-indent: -0.4em;
+		}
+
+		.toggle {
+			padding-inline-start: 0em;
+			list-style-type: none;
+		}
+
+		/* Indent toggle children */
+		.toggle>li>details {
+			padding-left: 1.7em;
+		}
+
+		.toggle>li>details>summary {
+			margin-left: -1.1em;
+		}
+
+		.selected-value {
+			display: inline-block;
+			padding: 0 0.5em;
+			background: rgba(206, 205, 202, 0.5);
+			border-radius: 3px;
+			margin-right: 0.5em;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+			white-space: nowrap;
+		}
+
+		.collection-title {
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		time {
+			opacity: 0.5;
+		}
+
+		.icon {
+			display: inline-block;
+			max-width: 1.2em;
+			max-height: 1.2em;
+			text-decoration: none;
+			vertical-align: text-bottom;
+			margin-right: 0.5em;
+		}
+
+		img.icon {
+			border-radius: 3px;
+		}
+
+		.user-icon {
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 100%;
+			margin-right: 0.5rem;
+		}
+
+		.user-icon-inner {
+			font-size: 0.8em;
+		}
+
+		.text-icon {
+			border: 1px solid #000;
+			text-align: center;
+		}
+
+		.page-cover-image {
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			height: 30vh;
+		}
+
+		.page-header-icon {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.page-header-icon-with-cover {
+			margin-top: -0.72em;
+			margin-left: 0.07em;
+		}
+
+		.page-header-icon img {
+			border-radius: 3px;
+		}
+
+		.link-to-page {
+			margin: 1em 0;
+			padding: 0;
+			border: none;
+			font-weight: 500;
+		}
+
+		p>.user {
+			opacity: 0.5;
+		}
+
+		td>.user,
+		td>time {
+			white-space: nowrap;
+		}
+
+		input[type="checkbox"] {
+			transform: scale(1.5);
+			margin-right: 0.6em;
+			vertical-align: middle;
+		}
+
+		p {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.image {
+			border: none;
+			margin: 1.5em 0;
+			padding: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+
+		.code,
+		code {
+			background: rgba(135, 131, 120, 0.15);
+			border-radius: 3px;
+			padding: 0.2em 0.4em;
+			border-radius: 3px;
+			font-size: 85%;
+			tab-size: 2;
+		}
+
+		code {
+			color: #eb5757;
+		}
+
+		.code {
+			padding: 1.5em 1em;
+		}
+
+		.code-wrap {
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+
+		.code>code {
+			background: none;
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+		}
+
+		blockquote {
+			font-size: 1.25em;
+			margin: 1em 0;
+			padding-left: 1em;
+			border-left: 3px solid rgb(55, 53, 47);
+		}
+
+		.bookmark {
+			text-decoration: none;
+			max-height: 8em;
+			padding: 0;
+			display: flex;
+			width: 100%;
+			align-items: stretch;
+		}
+
+		.bookmark-title {
+			font-size: 0.85em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 1.75em;
+			white-space: nowrap;
+		}
+
+		.bookmark-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.bookmark-info {
+			flex: 4 1 180px;
+			padding: 12px 14px 14px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.bookmark-image {
+			width: 33%;
+			flex: 1 1 180px;
+			display: block;
+			position: relative;
+			object-fit: cover;
+			border-radius: 1px;
+		}
+
+		.bookmark-description {
+			color: rgba(55, 53, 47, 0.6);
+			font-size: 0.75em;
+			overflow: hidden;
+			max-height: 4.5em;
+			word-break: break-word;
+		}
+
+		.bookmark-href {
+			font-size: 0.75em;
+			margin-top: 0.25em;
+		}
+
+		.sans {
+			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.code {
+			font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+		}
+
+		.serif {
+			font-family: Lyon-Text, Georgia, ui-serif, serif;
+		}
+
+		.mono {
+			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+		}
+
+		.pdf .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+		}
+
+		.pdf .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.pdf .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+		}
+
+		.pdf .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.highlight-default {
+			color: rgba(55, 53, 47, 1);
+		}
+
+		.highlight-gray {
+			color: rgba(96, 96, 98, 0.93);
+			fill: rgba(96, 96, 98, 0.93);
+		}
+
+		.highlight-brown {
+			color: rgba(174, 102, 29, 1);
+			fill: rgba(174, 102, 29, 1);
+		}
+
+		.highlight-orange {
+			color: rgba(210, 82, 22, 1);
+			fill: rgba(210, 82, 22, 1);
+		}
+
+		.highlight-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.highlight-teal {
+			color: rgba(62, 143, 53, 1);
+			fill: rgba(62, 143, 53, 1);
+		}
+
+		.highlight-blue {
+			color: rgba(33, 131, 190, 1);
+			fill: rgba(33, 131, 190, 1);
+		}
+
+		.highlight-purple {
+			color: rgba(151, 93, 190, 1);
+			fill: rgba(151, 93, 190, 1);
+		}
+
+		.highlight-pink {
+			color: rgba(203, 62, 132, 1);
+			fill: rgba(203, 62, 132, 1);
+		}
+
+		.highlight-red {
+			color: rgba(208, 60, 60, 1);
+			fill: rgba(208, 60, 60, 1);
+		}
+
+		.highlight-gray_background {
+			background: rgba(234, 234, 235, 0.93);
+		}
+
+		.highlight-brown_background {
+			background: rgba(213, 130, 38, 0.13);
+		}
+
+		.highlight-orange_background {
+			background: rgba(252, 103, 27, 0.13);
+		}
+
+		.highlight-yellow_background {
+			background: rgba(253, 183, 63, 0.13);
+		}
+
+		.highlight-teal_background {
+			background: rgba(76, 169, 66, 0.13);
+		}
+
+		.highlight-blue_background {
+			background: rgba(45, 159, 226, 0.13);
+		}
+
+		.highlight-purple_background {
+			background: rgba(187, 123, 230, 0.13);
+		}
+
+		.highlight-pink_background {
+			background: rgba(255, 85, 163, 0.13);
+		}
+
+		.highlight-red_background {
+			background: rgba(255, 82, 71, 0.13);
+		}
+
+		.block-color-default {
+			color: inherit;
+			fill: inherit;
+		}
+
+		.block-color-gray {
+			color: rgba(96, 96, 98, 0.93);
+			fill: rgba(96, 96, 98, 0.93);
+		}
+
+		.block-color-brown {
+			color: rgba(174, 102, 29, 1);
+			fill: rgba(174, 102, 29, 1);
+		}
+
+		.block-color-orange {
+			color: rgba(210, 82, 22, 1);
+			fill: rgba(210, 82, 22, 1);
+		}
+
+		.block-color-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.block-color-teal {
+			color: rgba(62, 143, 53, 1);
+			fill: rgba(62, 143, 53, 1);
+		}
+
+		.block-color-blue {
+			color: rgba(33, 131, 190, 1);
+			fill: rgba(33, 131, 190, 1);
+		}
+
+		.block-color-purple {
+			color: rgba(151, 93, 190, 1);
+			fill: rgba(151, 93, 190, 1);
+		}
+
+		.block-color-pink {
+			color: rgba(203, 62, 132, 1);
+			fill: rgba(203, 62, 132, 1);
+		}
+
+		.block-color-red {
+			color: rgba(208, 60, 60, 1);
+			fill: rgba(208, 60, 60, 1);
+		}
+
+		.block-color-gray_background {
+			background: rgba(234, 234, 235, 0.93);
+		}
+
+		.block-color-brown_background {
+			background: rgba(213, 130, 38, 0.13);
+		}
+
+		.block-color-orange_background {
+			background: rgba(252, 103, 27, 0.13);
+		}
+
+		.block-color-yellow_background {
+			background: rgba(253, 183, 63, 0.13);
+		}
+
+		.block-color-teal_background {
+			background: rgba(76, 169, 66, 0.13);
+		}
+
+		.block-color-blue_background {
+			background: rgba(45, 159, 226, 0.13);
+		}
+
+		.block-color-purple_background {
+			background: rgba(187, 123, 230, 0.13);
+		}
+
+		.block-color-pink_background {
+			background: rgba(255, 85, 163, 0.13);
+		}
+
+		.block-color-red_background {
+			background: rgba(255, 82, 71, 0.13);
+		}
+
+		.select-value-color-gray {
+			background-color: rgba(234, 234, 235, 0.93);
+		}
+
+		.select-value-color-brown {
+			background-color: rgba(213, 130, 38, 0.13);
+		}
+
+		.select-value-color-orange {
+			background-color: rgba(252, 103, 27, 0.13);
+		}
+
+		.select-value-color-yellow {
+			background-color: rgba(253, 183, 63, 0.13);
+		}
+
+		.select-value-color-green {
+			background-color: rgba(76, 169, 66, 0.13);
+		}
+
+		.select-value-color-blue {
+			background-color: rgba(45, 159, 226, 0.13);
+		}
+
+		.select-value-color-purple {
+			background-color: rgba(187, 123, 230, 0.13);
+		}
+
+		.select-value-color-pink {
+			background-color: rgba(255, 85, 163, 0.13);
+		}
+
+		.select-value-color-red {
+			background-color: rgba(255, 82, 71, 0.13);
+		}
+
+		.checkbox {
+			display: inline-flex;
+			vertical-align: text-bottom;
+			width: 16;
+			height: 16;
+			background-size: 16px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+
+		.checkbox-on {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+
+		.checkbox-off {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+	</style>
+</head>
+
+<body>
+	<article id="dab11005-bf1a-4634-ad13-32c17a8382ca" class="page mono">
+		<header>
+			<h1 class="page-title">김효원_Hyowon Kim. </h1>
+		</header>
+		<div class="page-body">
+			<p id="94d30a3b-5d31-4592-aca7-923eb58b725b" class="">
+			</p>
+			<p id="568e1498-a9d0-47e0-9bdc-571e40151f94" class=""><strong>안</strong>녕하세요, 데이터 사이언티스트를 꿈꾸는 <a
+					href="mailto:jerrykim91.pub@gmail.com">김효원</a>입니다. </p>
+			<p id="07b77679-f808-4ec6-8236-72ad33f9d01f" class="">
+			</p>
+			<div id="b8623e1d-82b4-4c2b-86b6-76a52162f317" class="column-list">
+				<div id="faff267b-26ec-4113-b544-9676b63a0594" style="width:25%" class="column">
+					<h2 id="6b230279-0b78-42b6-ac62-2e0f89baca6f" class="">개인정보.</h2>
+					<hr id="74e5c783-eef8-4649-8135-e9bca19b17c5" />
+					<p id="65838764-f412-4811-83ba-20df253c1a39" class="">
+					</p>
+					<figure id="124ea28b-3fd1-456e-ac91-2dd9ef654c74" class="image"><a
+							href="img/img.jpeg"><img
+								style="width:4032px"
+								src="img/img.jpeg" /></a>
+					</figure>
+					<p id="0a6e317b-1d7d-4b5a-a77c-dda48e9ded1f" class="">
+					</p>
+					<p id="f40f5f87-7b0d-454b-8dc3-754dc93b402d" class="">생년월일. </p>
+					<p id="74a79130-0726-4d52-bd89-bc5e6c15d905" class="">🍰 <time>@1991년 12월 14일</time> </p>
+					<p id="6d2dba75-e86c-48db-85a5-364c58d7a373" class="">e-mail. </p>
+					<p id="0798a267-4c5c-47e3-a0bc-767776565e04" class="">📨jerrykim91.pub@gmail.com</p>
+					<p id="6c547a91-211b-4450-abb4-0fcee80c27c0" class="">핸드폰. </p>
+					<p id="191e1d6d-149f-4a37-a9a6-f48eed096cb8" class=""> 📞 010.5392.4131</p>
+					<p id="aa32b91f-7622-4e17-b4b2-651ac97c4dbe" class="">주소. </p>
+					<p id="f161a22b-bc5b-43de-a783-ed1bc998782b" class="">🏡부산시 사하구 낙동대로278번길 9</p>
+					<p id="a726d3e6-4809-4a4a-8dc2-aef337d1994a" class="">
+					</p>
+					<p id="fa1bacbe-bc24-4bbd-804c-0c7d7ce5a8a6" class="">
+					</p>
+					<p id="d805fdde-9621-4e87-bee4-e1769a981877" class="">Portfolio.</p>
+					<hr id="0ee83b85-7334-412f-ad63-03d227cc8912" />
+					<figure id="95ec1528-1be3-405c-bbc4-b77e1e6053f1"><a
+							href="https://jerrykim91.github.io/PortfolioPage/" class="bookmark source">
+							<div class="bookmark-info">
+								<div class="bookmark-text">
+									<div class="bookmark-title">Jerry&#x27;s PortfolioPage 🤗</div>
+								</div>
+								<div class="bookmark-href">https://jerrykim91.github.io/PortfolioPage/</div>
+							</div><img
+								src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
+								class="bookmark-image" />
+						</a></figure>
+					<hr id="034e52b8-f445-429b-a303-f0ee8e50aeb2" />
+					<p id="d9d55272-4ded-47f2-a09a-a5102af644f8" class="">
+					</p>
+					<p id="d6637aa1-6f8f-48d1-af74-2a89ce840640" class="">
+					</p>
+					<p id="0075c5b6-7f91-4ddb-a421-55700620d9a7" class="">Github.</p>
+					<hr id="a00493d8-b478-48f6-98f3-14c99dab7789" />
+					<figure id="9518245c-96d9-485a-8c37-8908dba1dd1c"><a href="https://github.com/jerrykim91"
+							class="bookmark source">
+							<div class="bookmark-info">
+								<div class="bookmark-text">
+									<div class="bookmark-title">Jerrykim91 - Overview</div>
+									<div class="bookmark-description">Jerrykim91 has 25 repositories available. Follow
+										their code on GitHub.</div>
+								</div>
+								<div class="bookmark-href"><img src="https://github.com/favicon.ico"
+										class="icon bookmark-icon" />https://github.com/jerrykim91</div>
+							</div><img
+								src="https://avatars.githubusercontent.com/u/52520780?s=400&amp;u=0223a66c78e2ec4ce29becbb4a287a5895358a9f&amp;v=4"
+								class="bookmark-image" />
+						</a></figure>
+					<hr id="7c976a26-baa7-453f-8dc8-1b276fda5ea1" />
+					<p id="a91548b3-9a6e-4ed5-8c12-fd023e83d942" class="">
+					</p>
+				</div>
+				<div id="1c0cd71a-998a-471d-b7a4-e98205990a1b" style="width:75%" class="column">
+					<h2 id="680bd41b-4c61-4fb3-b021-5641bb315348" class="">🎓 학력</h2>
+					<hr id="8abd0212-48f2-4d9c-ab70-2bf045d2824d" />
+					<ul id="960471b1-1754-4669-bb30-e8ef89945719" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2010.03 ~ 2017.08</code> <a
+										href="Http:www."><strong>동서대학교</strong></a><strong> </strong>/ 메카트로닉스 융합공학부
+									시스템경영공학과(산업공학과) / 학사 졸업</summary>
+								<ul id="7b4fa93d-fc6a-4523-91cf-cb89326faf5f" class="bulleted-list">
+									<li style="list-style-type:disc">학점 - 2.58/4.5</li>
+								</ul>
+								<p id="82ab7a45-bfa8-4e2c-9fea-21d134ccf801" class="">
+								</p>
+								<p id="f05e2172-8409-4e3d-8597-c8a2fd3b2da3" class="">
+								</p>
+							</details>
+						</li>
+					</ul>
+					<p id="c38cf144-0cc4-4453-a0b3-eac2f30fe3d8" class=""><code>2007.03 ~ 2010.02</code> 부산여자고등학교 / 졸업
+					</p>
+					<p id="67732751-177d-4c8c-8e0d-3c67fbf7cb8c" class="">
+					</p>
+					<h2 id="d2a8fe82-4abb-460b-ba21-637f6c044785" class="">👩🏻‍💻 경력</h2>
+					<p id="742fac93-bca6-4e95-8a77-9952764d4ae7" class="block-color-gray">⁎ 좀 더 자세한 내용을 원한다면 ▶버튼을 눌러주세요.
+					</p>
+					<hr id="2eb5f796-3095-4022-af6b-e1e66208ff13" />
+					<ul id="14180d75-a1b3-489b-b0c2-cdd4b21147f0" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2021.06.07 ~</code> <strong>ABH / AI R&amp;D / </strong>연구원</summary>
+								<ul id="d90b08c6-af63-4441-810e-4d2e81270728" class="bulleted-list">
+									<li style="list-style-type:disc"></li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<ul id="e441cc1d-b10a-4567-9191-fb04a4d09545" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2020.10 ~2021.01</code> <strong>TmaxSoft </strong>/ 정책 지원 사업부 / 데이터 라벨러,
+									<strong>인턴</strong></summary>
+								<ul id="a942cc5b-32f9-49bd-b6b6-6cbf26463cb0" class="block-color-gray bulleted-list">
+									<li style="list-style-type:disc">음성 전사 및 음성 전사 검수</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<p id="9aa9d89a-b1b8-495d-a3bb-6f7ac129ff82" class="">
+					</p>
+					<h2 id="ec15e1e1-132e-4115-97f3-d27582e085ab" class="">🏆 수상 </h2>
+					<ul id="976a0c49-f76c-46a6-bcd3-06b752fc9e98" class="toggle">
+						<li>
+							<details open="">
+								<summary>데이콘(Dacon) - <a
+										href="https://dacon.io/competitions/official/235618/codeshare/1430">포스트 코로나 데이터
+										시각화 경진대회</a>, 장려상</summary>
+								<ul id="f8ff1b64-ba3b-4229-8a02-7ecee5a0ed36" class="toggle">
+									<li>
+										<details open="">
+											<summary>상장</summary>
+											<figure id="1696c20b-f3e5-417e-b4a1-053b1e844750">
+												<div class="source"><a
+														href="https://www.notion.so/02ece34cd8ca476eaacae7eb0a93a321">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/02ece34c-d8ca-476e-aaca-e7eb0a93a321/_.pdf</a>
+												</div>
+											</figure>
+										</details>
+									</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<p id="3a1f3117-abbf-4056-a98e-0ca9c475694b" class="">
+					</p>
+					<p id="03ce5c45-65aa-4b4c-9a04-1eb97298ca0f" class="">
+					</p>
+					<h3 id="35797f02-737d-481f-abb3-fcc06d4b3210" class="">🏃‍♀️ 대외활동</h3>
+					<p id="3d0796cd-ff97-4c3c-b16d-570853361c38" class="block-color-gray">⁎ 좀 더 자세한 내용을 원한다면 ▶버튼을 눌러주세요.
+					</p>
+					<hr id="f081698d-1527-4bd8-8038-5b2b30420026" />
+					<ul id="26d959dc-d95b-4667-a7d1-e20330fd2457" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2020.08 ~ 2020.09</code> 2020 공공 빅데이터 청년 인턴쉽</summary>
+								<ul id="a0815de9-3d3e-4750-a631-f354bb62f713" class="toggle">
+									<li>
+										<details open="">
+											<summary>수료증</summary>
+										</details>
+									</li>
+								</ul>
+								<ul id="42024862-0deb-4cd7-84d6-0ceaa8102366" class="bulleted-list">
+									<li style="list-style-type:disc">R 을 이용한 분석 및 시각화<ul
+											id="45158137-d825-421e-8143-37ae87d64027" class="bulleted-list">
+											<li style="list-style-type:circle">간단한 머신러닝</li>
+										</ul>
+									</li>
+								</ul>
+								<ul id="bb6e1961-f0c3-4919-83ae-90c85b3d7c4f" class="bulleted-list">
+									<li style="list-style-type:disc">Ggis를 이용한 시각화</li>
+								</ul>
+								<ul id="6598bd1a-94f8-40a3-9c38-8b07aee44526" class="bulleted-list">
+									<li style="list-style-type:disc">파이썬을 이용한 웹크롤링 </li>
+								</ul>
+								<p id="e428b037-9055-4095-8290-ac9d3aa27fb4" class="">
+								</p>
+							</details>
+						</li>
+					</ul>
+					<ul id="02a596f6-9a2d-469a-9495-b8da659af1ee" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2019.12 ~ 2020.06</code> 머신러닝을 활용한 빅데이터 분석 과정</summary>
+								<ul id="444d9e5c-dc90-4c27-bae5-2cfc43fa65e1" class="toggle">
+									<li>
+										<details open="">
+											<summary>수료증</summary>
+											<figure id="f8d4761e-b7be-4f12-b295-b35d51447811">
+												<div class="source"><a
+														href="https://www.notion.so/27bb8141d0274e6ba897d871e3d08e25">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27bb8141-d027-4e6b-a897-d871e3d08e25/_.pdf</a>
+												</div>
+											</figure>
+										</details>
+									</li>
+								</ul>
+								<ul id="c028bb47-99eb-4acc-875d-98ae29adb4ac" class="bulleted-list">
+									<li style="list-style-type:disc">python</li>
+								</ul>
+								<ul id="fe9c7f63-5369-4ac6-acd1-54fe184693f7" class="toggle">
+									<li>
+										<details open="">
+											<summary>Python web Programming</summary>
+											<ul id="9bbbe1f1-9f8f-478c-96e3-aa3806b7503d"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">Django</li>
+											</ul>
+											<ul id="a1adf58c-4959-44c1-8f9f-1736c223fff2"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">Flask</li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+								<ul id="4afed5b6-b633-4f4c-ba71-a44fe79d91f2" class="toggle">
+									<li>
+										<details open="">
+											<summary>데이터 분석 기법 </summary>
+											<ul id="cb519dbc-be8d-4d3c-9078-b9de622f3b1d"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">데이터 수집 및 웹크롤링</li>
+											</ul>
+											<ul id="b9457e1c-a49d-49d0-b11f-5b8f5d6ed9e8"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc"> 탐색 기반 데이터 분석</li>
+											</ul>
+											<ul id="f4d9452c-11cf-437b-9198-bbde7dcb1f69"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc"> 통계 기반 데이터 분석</li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+								<ul id="096d4c10-307f-4995-b961-f1acc05f4028" class="toggle">
+									<li>
+										<details open="">
+											<summary>빅데이터 분산 저장 처리 환경 구축</summary>
+											<ul id="12ef8c98-84d5-4929-96fb-b6fc84914b6e"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">하둡</li>
+											</ul>
+											<ul id="95025c0f-5df5-4404-a742-844bcbf5e5c5"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">스파크</li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+								<ul id="8ab0a19a-87d9-4aa5-8098-f0b9b7eb2867" class="toggle">
+									<li>
+										<details open="">
+											<summary>인공지능(AI)</summary>
+											<ul id="53c1e6c9-b449-418b-87bf-e3d9caf94e88"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">머신러닝 <ul
+														id="7a9c3990-3e09-4644-818b-a4df263f4360"
+														class="block-color-gray bulleted-list">
+														<li style="list-style-type:circle">이미지 분석</li>
+													</ul>
+													<ul id="200af20b-9184-4807-9bcc-588fd45fe9dc" class="bulleted-list">
+														<li style="list-style-type:circle"> 자연어 분석</li>
+													</ul>
+												</li>
+											</ul>
+											<ul id="a305afdc-0886-44cb-ae4b-07e702e05dc4"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">딥러닝 <ul
+														id="b02964f3-0ae3-4963-86ec-968bb144d6bf" class="bulleted-list">
+														<li style="list-style-type:circle">이미지 분석 - </li>
+													</ul>
+													<ul id="82e017a3-590e-429d-add0-9c6ba7e8a2fc" class="bulleted-list">
+														<li style="list-style-type:circle">자연어 분석 - </li>
+													</ul>
+												</li>
+											</ul>
+											<ul id="e7970f71-83be-4399-a6c7-6b829e80a527"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">강화 학습 </li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+								<p id="fe4c9d18-6259-4973-be30-5659ce8d3719" class="">
+								</p>
+							</details>
+						</li>
+					</ul>
+					<ul id="fa794e65-dc7a-4fac-a32f-c7b11a9bec28" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2019.6 ~ 2019.11</code> 프로젝트 기반의 인공지능 머신러닝 개발자 과정</summary>
+								<ul id="32e34979-ae48-4a50-9c33-6013d333485c" class="toggle">
+									<li>
+										<details open="">
+											<summary>수료증</summary>
+											<figure id="5d24f768-793c-4099-b5d7-3b40a7156997">
+												<div class="source"><a
+														href="https://www.notion.so/03eafb2bb2bd42049643c8b45846b191">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03eafb2b-b2bd-4204-9643-c8b45846b191/_.pdf</a>
+												</div>
+											</figure>
+										</details>
+									</li>
+								</ul>
+								<ul id="fc37b050-cd54-4e60-ab3a-133d3fa31658" class="toggle">
+									<li>
+										<details open="">
+											<summary>웹프로그래밍(Full-stack)</summary>
+											<ul id="253f19d3-68a4-4aa4-b140-0208c661a751"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">자바, 스프링 프레임워크 </li>
+											</ul>
+											<ul id="11899f60-a51d-4d2d-a6f7-6af69c52df02"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">데이터 베이스 (sql, no sql)</li>
+											</ul>
+											<ul id="8bbfacb7-91d8-44da-a699-6c9ac62d952d"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">리엑트</li>
+											</ul>
+											<ul id="c3445625-0dc5-4920-aee3-cf2453ac9eb2"
+												class="block-color-gray bulleted-list">
+												<li style="list-style-type:disc">자바스크립트, node.js </li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+								<ul id="07d7f4ee-cf03-4961-8033-73c520559290" class="toggle">
+									<li>
+										<details open="">
+											<summary>인공지능(Ai)</summary>
+											<ul id="9ad3f4e8-9e5c-4b6a-9ac5-b7cdd38ae846" class="bulleted-list">
+												<li style="list-style-type:disc">데이터 크롤링</li>
+											</ul>
+											<ul id="1fbca43e-1373-4430-af0c-f6bee4655739" class="bulleted-list">
+												<li style="list-style-type:disc">데이터 수집, 분석(Eda) </li>
+											</ul>
+											<ul id="549634db-b3fd-4989-86d0-e006c836c7e5" class="bulleted-list">
+												<li style="list-style-type:disc">머신러닝</li>
+											</ul>
+											<ul id="8d3f05da-032c-41d0-8020-87915c7931bb" class="bulleted-list">
+												<li style="list-style-type:disc"> 딥러닝</li>
+											</ul>
+										</details>
+									</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<p id="37ccb152-654f-413f-baf7-4e54739379f1" class="">
+					</p>
+					<h2 id="8a41172e-8dcd-4a7b-8fdd-53ab92bdf263" class="">📃 자격증</h2>
+					<p id="f872b89f-50ff-4db5-b693-587304af0174" class=""><mark class="highlight-gray">⁎ 좀 더 자세한 내용을
+							원한다면 ▶버튼을 눌러주세요.</mark></p>
+					<hr id="38d7c7f2-93e4-421c-9a75-3332379f29ee" />
+					<ul id="4162c450-94e8-4d8a-b645-e78261838d0f" class="toggle">
+						<li>
+							<details open="">
+								<summary>데이터분석 준전문가(ADsP) 취득</summary>
+								<ul id="b29d1030-021d-449d-a615-17b61d2e5bb2" class="toggle">
+									<li>
+										<details open="">
+											<summary>상장</summary>
+										</details>
+									</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<p id="1eb3380c-f065-4ec0-b394-eae195b6c17a" class="">
+					</p>
+					<p id="ef3bd01f-e655-47d0-9ecd-4e7ed227c449" class="">
+					</p>
+					<h3 id="19e42f7c-73c6-45b5-82b1-2e1687ebcc06" class="">🎴 기타경력 - 취미, 강의 등등</h3>
+					<p id="8a17bab4-6655-466f-8097-3804fc03b883" class="block-color-gray">⁎ 좀 더 자세한 내용을 원한다면 ▶버튼을 눌러주세요.
+					</p>
+					<hr id="d167eee1-46ce-42f6-a9fd-b88cdb1b7f7f" />
+					<ul id="8778194a-c2f2-4be1-a960-202f7e3648b7" class="toggle">
+						<li>
+							<details open="">
+								<summary><code>2017.12 ~ 2019.01</code> SSR manufacturing Corp (Tesla Vendor), USA ,
+									<strong>Intern</strong></summary>
+								<ul id="cc00c460-02d1-48e2-93d9-5f74d8e3687a" class="block-color-gray bulleted-list">
+									<li style="list-style-type:disc">Logistics Division in Tesla Giga Factory<ul
+											id="802946c3-3092-4404-b3dd-6cb3a9a439d9" class="toggle">
+											<li>
+												<details open="">
+													<summary>추천서</summary>
+													<figure id="3b9a7e5d-7ef7-4efc-9199-3047edc44bb2"><a
+															href="https://drive.google.com/file/d/1u0O1r3-fUiRSZMyNGsIr7Vg8oCY8ctx0/view?usp=sharing"
+															class="bookmark source">
+															<div class="bookmark-info">
+																<div class="bookmark-text">
+																	<div class="bookmark-title">Letter of
+																		Recommendation.pdf</div>
+																</div>
+																<div class="bookmark-href"><img
+																		src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"
+																		class="icon bookmark-icon" />https://drive.google.com/file/d/1u0O1r3-fUiRSZMyNGsIr7Vg8oCY8ctx0/view?usp=sharing
+																</div>
+															</div><img
+																src="https://lh5.googleusercontent.com/sBsqLC69KeceR5Ae4bi9V8_baQBgBjlivwjyPV4lAbl-WUOlX9P30LaP1ScKXIrHiJk=w1200-h630-p"
+																class="bookmark-image" />
+														</a></figure>
+												</details>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<ul id="cd2cec45-1c89-4248-bde8-af2c4154c831" class="block-color-gray bulleted-list">
+									<li style="list-style-type:disc">In Tesla, AGV TA, AGV Commissioning, AGV Service
+										and TA of Crane installations with Murata(Muratec).</li>
+								</ul>
+								<ul id="dab0bb6b-93b9-4902-9a9b-45f56e6d0ce9" class="block-color-gray bulleted-list">
+									<li style="list-style-type:disc">2018 USA Murata(Muratec) 우수 사원 선정<ul
+											id="490e46cc-44b9-420c-bd34-735ba1113d7d" class="toggle">
+											<li>
+												<details open="">
+													<summary>상장</summary>
+													<figure id="ba61dd98-4e5a-496e-81c1-c02fba7789a0"><a
+															href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:dab20f55-bf7e-48f7-ab1a-cb528c7183df"
+															class="bookmark source">
+															<div class="bookmark-info">
+																<div class="bookmark-text">
+																	<div class="bookmark-title">Adobe Acrobat</div>
+																	<div class="bookmark-description">Adobe Acrobat
+																	</div>
+																</div>
+																<div class="bookmark-href"><img
+																		src="https://documentcloud.adobe.com/favicon.ico"
+																		class="icon bookmark-icon" />https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:dab20f55-bf7e-48f7-ab1a-cb528c7183df
+																</div>
+															</div>
+														</a></figure>
+												</details>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</details>
+						</li>
+					</ul>
+					<p id="705e807e-0508-435d-8005-81c29013397f" class="">
+					</p>
+					<p id="be9f7a6e-432a-43c9-b83a-bf40a8ceedb4" class="">
+					</p>
+					<p id="d6231b64-72e6-418f-a371-56ea358c7d89" class="">🗂 기타 </p>
+					<hr id="91dd4ca1-eab6-49d0-a831-d85c4bbfd5f0" />
+				</div>
+			</div>
+			<p id="29aa12f5-15ca-45cf-858b-f2febb086a79" class=""><mark class="highlight-gray">업데이트</mark> :
+				<time>@06/01/2021</time> </p>
+			<p id="74e27588-7fd1-46ea-a4d7-182773a84334" class="">
+			</p>
+			<p id="122eca5f-30e1-4db1-960a-02f73fe41725" class="">
+			</p>
+			<p id="2554217a-72a3-4938-9a12-8217a9cf9db6" class="">
+			</p>
+		</div>
+	</article>
+</body>
+
+</html>
