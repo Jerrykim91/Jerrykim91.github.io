@@ -9,6 +9,11 @@ layout: home
 
 TEST
 ---
-
+<!-- 
 <a href="https://hits.seeyoufarm.com">
-	<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
+	<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a>  -->
+
+
+
+<a class="introduce_link" href="https://github.com/madplay" rel="nofollow" target="_blank">Github</a>
+	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
