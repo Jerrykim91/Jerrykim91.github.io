@@ -16,10 +16,10 @@
             {%- include toc-date.html -%}
 
             <div class="book-body">
+                
+                {%- include body.html -%}
                 <a href="https://hits.seeyoufarm.com">
                     <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
-                {%- include body.html -%}
-
                 {% if reversed_posts %}
                     <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{reversed_posts.first.title}}">
                         <i class="fa fa-angle-right"></i>
