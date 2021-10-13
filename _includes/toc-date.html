@@ -18,12 +18,21 @@
                     {{ site.title | escape }}
                 </a>
             </li>
-
             <li class="divider"></li>
-            <li>
-                <a href="{{site.baseurl}}/about_me.html" target="_blank" class="gitbook-link">About_Me(test)
+            {% if page.url == "/about_me.html" or page.url == "/about_me" %}
+            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+            {% else %}
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+            {% endif %}
+                <a href="{{site.baseurl}}">
+                    {{ site.title | escape }}
                 </a>
             </li>
+            
+            <!-- <li>
+                <a href="{{site.baseurl}}/about_me.html" target="_blank" class="gitbook-link">About_Me(test)
+                </a>
+            </li> -->
             {% assign reversed_posts = site.posts | reverse %}
 
             {% for post in reversed_posts %}
