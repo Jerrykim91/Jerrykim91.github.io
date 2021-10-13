@@ -56,4 +56,4 @@ utterances:
   issue_term: title
   theme: github-light
 
-theme: jekyll-theme-cayman  # 웨 하는지 모름 
+# theme: jekyll-theme-cayman  # 웨 하는지 모름 
