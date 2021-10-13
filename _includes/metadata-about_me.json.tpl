@@ -3,20 +3,17 @@
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        {% assign reversed_posts = site.posts | reverse %}
-
-        {% if reversed_posts %}
+        {% if page.next %}
         "next": {
-            "title": "{{reversed_posts.first.title}}",
+            "title": "{{page.next.title}}",
             "level": "1.2",
             "depth": 1,
-            "path": "{{reversed_posts.first.path}}",
-            "ref": "{{reversed_posts.first.path}}",
+            "path": "{{page.next.path}}",
+            "ref": "{{page.next.path}}",
             "articles": []
         },
         {% endif %}
         "dir": "ltr"
     },
-
     {%- include metadata.json.tpl -%}
 }
