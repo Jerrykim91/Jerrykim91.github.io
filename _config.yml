@@ -8,9 +8,10 @@ description: >
 
 version:          1.0
 gitbook_version:  3.2.3
+github_username:  jerrykim91
 
-url:              'https://jerrykim91.github.io'
-baseurl:          '/Jerry's CodeBook!'
+url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:          '/' # the subpath of your site, e.g. /blog
 #'/jekyll-gitbook'
 rss:              RSS
 
@@ -38,7 +39,8 @@ permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
-
+  - Gemfile
+  - Gemfile.lock
 destination:      ./_site
 incremental:      false
 regenerate:       true
