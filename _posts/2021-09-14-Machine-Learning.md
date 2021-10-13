@@ -464,3 +464,16 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 - scikit-learn - algorithm cheat-sheet &nbsp; : &nbsp;<https://scikit-learn.org/stable/_static/ml_map.png>
 
 <br><br>
+
+
+<!-- 코드라인 -->
+<br>
+<script src="https://utteranc.es/client.js"
+    repo="Jerrykim91/jerrykim91.github.io"
+    issue-term="title"
+    label="😎"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+<br>
