@@ -8,10 +8,6 @@
                 <input type="text" placeholder="Type to search" />
                 </a>
             </li>
-            <li>
-                <a href="{{site.baseurl}}/about_me.html" target="_blank" class="gitbook-link">About_Me(test)
-                </a>
-            </li>
 
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
@@ -24,7 +20,10 @@
             </li>
 
             <li class="divider"></li>
-
+            <li>
+                <a href="{{site.baseurl}}/about_me.html" target="_blank" class="gitbook-link">About_Me(test)
+                </a>
+            </li>
             {% assign reversed_posts = site.posts | reverse %}
 
             {% for post in reversed_posts %}
