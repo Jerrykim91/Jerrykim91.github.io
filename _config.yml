@@ -41,9 +41,18 @@ exclude:
   - _drafts
   - Gemfile
   - Gemfile.lock
+
 destination:      ./_site
 incremental:      false
 regenerate:       true
 
 plugins:
   - jemoji
+
+
+utterances:
+  enable: true
+  repo: https://jerrykim91.github.io/jerrykim91.github.io
+  issue_term: title
+  theme: github-light
+
