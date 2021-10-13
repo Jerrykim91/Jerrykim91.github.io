@@ -2,4 +2,4 @@
 layout: home
 ---
 
-Make Jelly site have a GitBook look!
+좋아하는 직업을 선택하면 평생 하루도 일하지 않아도 된다! 핳!

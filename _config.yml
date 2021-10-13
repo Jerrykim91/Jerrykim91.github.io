@@ -1,16 +1,16 @@
 # Configurations
-title:            제리가 자주 사용하는 코드
-longtitle:        jerry가 자주 사용하는 코드
-author:           jerrykim
+title:            Jerry's CodeBook!
+longtitle:        CodeBook
+author:           jerrykim91
 email:            jerrykim91.pub@gmail.com
 description: >
-  좋아하는 직업을 선택하면 평생 하루도 일하지 않아도 된다. 
+  This is jerry CodeBook!
 
 version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://jerrykim91.github.io'
-baseurl:          '/'
+baseurl:          '/home'
 #'/jekyll-gitbook'
 rss:              RSS
 
