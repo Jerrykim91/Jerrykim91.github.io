@@ -1,0 +1,59 @@
+# Configurations
+title:            Jerry's CodeBook!
+longtitle:        Jerry's CodeBook!
+author:           jerrykim91
+email:            jerrykim91.pub@gmail.com
+description: >
+  This is jerry CodeBook!
+
+version:          1.0
+gitbook_version:  3.2.3
+github_username:  jerrykim91
+
+url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:          'https://jerrykim91.github.io' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
+#'/jekyll-gitbook'
+rss:              RSS
+
+toc:
+  enabled: true # 차례
+  h_min: 1
+  h_max: 3
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:        /:categories/:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+  - Gemfile
+  - Gemfile.lock
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jemoji
+
+
+utterances:
+  enable: true
+  repo: https://jerrykim91.github.io/jerrykim91.github.io
+  issue_term: title
+  theme: github-light
+
+# theme: jekyll-theme-cayman  # 웨 하는지 모름 
