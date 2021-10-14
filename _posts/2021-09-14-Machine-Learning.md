@@ -7,6 +7,10 @@ tags: [writing, ML]
 mermaid: true
 math: true
 ---
+<!-- 코드 상단 : 방문자 수 확인 -->
+<a href="https://hits.seeyoufarm.com">
+                        <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
+
 
 Ps. test 작업용입니다.
 
