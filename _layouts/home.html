@@ -1,42 +1,60 @@
-
 <!DOCTYPE HTML>
-<html lang="en" >
-    <head>
+<html lang="en">
 
-        {%- include head.html -%}
+<head>
 
-        {% assign reversed_posts = site.posts | reverse %}
+    {%- include head.html -%}
 
-        {% if reversed_posts %}
-            <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
-        {% endif %}
-    </head>
-    <body>
-        <div class="book">
+    {% assign reversed_posts = site.posts | reverse %}
 
-            {%- include toc-date.html -%}
+    {% if reversed_posts %}
+    <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
+    {% endif %}
+</head>
 
-            <div class="book-body">
-                {%- include body.html -%}
-
-                {% if reversed_posts %}
-                    <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{reversed_posts.first.title}}">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
+<body>
+    <div class="book">
+        <!--  Search -->
+        {% if site.subscribers %}
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                {% if site.logo %}
+                <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
                 {% endif %}
-                <!-- {%- include search.html -%} -->
+                <h1 class="subscribe-overlay-title">Search {{ site.title }}</h1>
+                <p class="subscribe-overlay-description">
+                    lunr.js를 이용한 posts 검색 </p>
+                {% include subscribe-form.html placeholder="keyword" %}
             </div>
-            {%- include search.html -%}
-
-            <script>
-            var gitbook = gitbook || [];
-            gitbook.push(function() {
-                gitbook.page.hasChanged({%- include metadata-home.json.tpl -%});
-            });
-            </script>
         </div>
+        {% endif %}
+        <!-- end Search -->
+        {%- include toc-date.html -%}
 
-        {%- include footer.html -%}
+        <div class="book-body">
+            {%- include body.html -%}
 
-    </body>
+            {% if reversed_posts %}
+            <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique"
+                aria-label="Next page: {{reversed_posts.first.title}}">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            {% endif %}
+            <!-- {%- include search.html -%} -->
+        </div>
+        {%- include search.html -%}
+
+        <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function () {
+                gitbook.page.hasChanged({% - include metadata - home.json.tpl -%});
+            });
+        </script>
+    </div>
+
+    {%- include footer.html -%}
+
+</body>
+
 </html>
