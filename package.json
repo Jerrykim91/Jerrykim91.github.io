@@ -1,28 +1,8 @@
 
-
-
 {
-  "name": "jerrykim91",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "./publish_gitbook.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jerrykim91/jerrykim91.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jerrykim91/jerrykim91.github.io/issues"
-  },
-  
-  "dependencies": {}
-}
-
-
-
+    "homepage" : "https://jerrykim91.github.io/",
+    "script": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
+  }
