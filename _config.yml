@@ -49,7 +49,6 @@ regenerate:       true
 plugins:
   - jemoji
 
-theme: jekyll-theme-cayman
 
 utterances:
   enable: true

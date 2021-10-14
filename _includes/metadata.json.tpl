@@ -43,7 +43,7 @@
             }
         },
         "theme": "default",
-        "author": "jerrykim91",
+        "author": "Tao He",
         "pdf": {
             "pageNumbers": true,
             "fontSize": 12,
