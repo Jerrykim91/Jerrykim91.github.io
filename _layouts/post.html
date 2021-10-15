@@ -39,13 +39,13 @@
                 {% endif %}
                     
             </div>
-            {%- include search.html -%}
             <script>
             var gitbook = gitbook || [];
             gitbook.push(function() {
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
             </script>
+            {%- include search.html -%}
         </div>
 
         {%- include footer.html -%}

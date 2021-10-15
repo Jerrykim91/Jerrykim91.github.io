@@ -1,51 +1,14 @@
 <div class="search-results">
-    <ul class="mylist" id="search-results"></ul>
-    <!--  Search -->
-    {% if site.subscribers %}
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="#"></a>
-        <div class="subscribe-overlay-content">
-            <h1 class="subscribe-overlay-title">Search {{ site.title }}</h1>
-            <p class="subscribe-overlay-description">
-                lunr.js를 이용한 posts 검색 </p>
-            {% include subscribe-form.html placeholder="keyword" %}
-        </div>
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
     </div>
-    {% endif %}
-    <p>TEST</p>
-    <!-- end Search -->
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
 </div>
 
-
-<!-- ---
-title: Search Result
-navigation: true
-logo:
-class: page-template
-subclass: 'post page'
----
-
-<form action="/search" method="get" hidden="hidden">
-    <label for="search-box"></label>
-    <input type="text" id="search-box" name="query">
-</form> -->
-
-
-
-<script>
-    window.store = {
-            {% for post in site.posts %}
-            "{{ post.url | slugify }}": {
-                "title": "{{ post.title | xml_escape }}",
-                    "author": "{{ post.author | xml_escape }}",
-                    "category": "{{ post.category | xml_escape }}",
-                    "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-                "url": "{{ post.url | xml_escape }}"
-            }
-            {% unless forloop.last %},{% endunless %}
-            {% endfor %}
-            };
-</script>
-
-<script src="{{site.baseurl}}/gitbook/gitbook-plugin-search-ver2/search.js"></script>
-<script src="{{site.baseurl}}/gitbook/gitbook-plugin-search-ver2/search.js"></script>
+<script src="{{site.baseurl}}/gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="{{site.baseurl}}/gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="{{site.baseurl}}/gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="{{site.baseurl}}/gitbook/gitbook-plugin-search/search.js"></script>

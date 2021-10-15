@@ -10,9 +10,9 @@ version:          1.0
 gitbook_version:  3.2.3
 github_username:  jerrykim91
 
-url:              ''
+url:              '/'
 #'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          ''
+baseurl:          '/'
 #'https://jerrykim91.github.io' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
 #'/jekyll-gitbook'
 rss:              RSS
@@ -20,7 +20,7 @@ rss:              RSS
 toc:
   enabled: true # 차례
   h_min: 1
-  h_max: 3
+  h_max: 5
 
 # markdown render engine.
 markdown:         kramdown
@@ -59,3 +59,15 @@ utterances:
   theme: github-light
 
 # theme: jekyll-theme-cayman  # 웨 하는지 모름 
+
+
+# Tipue search settings
+# tipue_search:
+#   include:
+#     pages: true
+#   exclude:
+#     files: [search.html]
+
+
+# exclude_from_search: true
+# tipue_search_active: true

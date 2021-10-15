@@ -1,5 +1,5 @@
 ---
-title: 제목
+title: Open CV function - 자주 쓰는 함수 
 author: jerry # 작성자 
 date: 2021-10-14 13:00:00 +0800 # 날짜
 category: 카테고리

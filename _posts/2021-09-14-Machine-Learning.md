@@ -2,10 +2,8 @@
 title: Machine Learning
 author: jerry
 date: 2021-10-13 09:10:00 +0800
-categories: [ML]
-tags: [writing, ML]
-mermaid: true
-math: true
+category: ML
+layout: post
 ---
 <!-- 코드 상단 : 방문자 수 확인 -->
 <a href="https://hits.seeyoufarm.com">

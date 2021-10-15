@@ -1,20 +1,11 @@
 <div class="book-summary">
-    <!-- <div id="book-search-input" role="search">
-        <input type="text" placeholder="Type to search" />
-    </div> -->
+    <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" id="search-box"/>
+          
+    </div>
     <nav role="navigation">
         <ul class="summary">
-            <!-- Search -->
-            <!-- {% if site.subscribers %}
-            <a class="subscribe-button" href="#subscribe">Search</a>
-            {% endif %} -->
 
-            <form id="book-search-input" method="get" role="search">
-                <input type="text" placeholder="Type to search" id="search-box" name="query"/>
-            </form>
-
-
-            <!-- end Search -->
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
             {% else %}
@@ -49,9 +40,10 @@
 
             <li>
                 <a href="https://www.youtube.com/watch?v=hr2xGbc6jO0&t=286s" target="blank" class="gitbook-link">
-                    Test!
+                    이하이!
                 </a>
             </li>
+            <li class="divider"></li>
         </ul>
     </nav>
 </div>
