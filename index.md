@@ -4,7 +4,7 @@ layout: home
 
 <!-- 코드 상단 : 방문자 수 확인 -->
 <a href="https://hits.seeyoufarm.com">
-                        <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
+<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
 
 <br>
 
@@ -14,18 +14,23 @@ layout: home
 
 
 
-Main page- TEST
+Main page
 ---
-#### 공사중 
+#### 공사 내용 
 
-- search 사용 불가 
+- search : 기능 개발 중 
+- Directory : 기능 개발 중
+
+
+
+
+
 
 ### Git History
 
 <!-- 코드 중간 : github commit history -->
 <a class="introduce_link" href="https://github.com/madplay" rel="nofollow" target="_blank">Github</a>
 	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
-
 
 
 
