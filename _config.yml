@@ -1,29 +1,35 @@
 # Configurations
 title:            Jerry's CodeBook!
 longtitle:        Jerry's CodeBook!
-author:           jerrykim91
+author:           jerrykim91  # 사이트의 작성자 
 email:            jerrykim91.pub@gmail.com
 description: >
   This is jerry CodeBook!
+
+languages: ['ko', 'en'] # 사용 할 언어 
+default_lang: 'en'
 
 version:          1.0
 gitbook_version:  3.2.3
 github_username:  jerrykim91
 
-url:              '/'
+url:              ''
 #'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          '/'
+baseurl:          ''
 #'https://jerrykim91.github.io' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
 #'/jekyll-gitbook'
 rss:              RSS
 
+# site.url : 해당 사이트의 url , 해당 실제 url을 설정해서 사용 
+
 toc:
   enabled: true # 차례
   h_min: 1
-  h_max: 5
+  h_max: 3
 
 # markdown render engine.
 markdown:         kramdown
+# default Markdown renderer for Jekyll
 kramdown:
   auto_ids:               true
   input:                  GFM
@@ -34,7 +40,9 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
+# 읽기 처리 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
+encoding: "utf-8"
 
 # Permalinks
 permalink:        /:categories/:year-:month-:day-:title:output_ext
@@ -47,7 +55,14 @@ exclude:
 destination:      ./_site
 incremental:      false
 regenerate:       true
+# plugins_dir         : _plugins # 문자열 배열을 취하고 순서대로 플러그인을로드합니다.
+# layouts_dir         : _layouts
+# data_dir            : _data
+# includes_dir        : _includes
 
+
+
+# 사이트에서 사용하는 플러그인 
 plugins:
   - jemoji
 
@@ -60,14 +75,3 @@ utterances:
 
 # theme: jekyll-theme-cayman  # 웨 하는지 모름 
 
-
-# Tipue search settings
-# tipue_search:
-#   include:
-#     pages: true
-#   exclude:
-#     files: [search.html]
-
-
-# exclude_from_search: true
-# tipue_search_active: true

@@ -1,16 +1,15 @@
 <div class="book-summary">
-    <div id="book-search-input" role="search">
-        <input type="text" placeholder="Type to search" id="search-box"/>
-          
-    </div>
+    <!-- <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" />
+    </div> -->
     <nav role="navigation">
         <ul class="summary">
-
             {% if page.url == "/index.html" or page.url == "/" %}
-            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}">
             {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
             {% endif %}
+                <!-- 하위 목차 -->
                 <a href="{{site.baseurl}}">
                     {{ site.title | escape }}
                 </a>
@@ -18,11 +17,15 @@
             <li class="divider"></li>
             
             {% assign reversed_posts = site.posts | reverse %}
-
+            <p>{{reversed_posts[0].posts.1}}</p>
             {% for post in reversed_posts %}
+            <!-- 목차 : 헤드라인 -->
                 {% if page.url == post.url %}
-                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                <!-- 지정한 글 : 하위까지 보여짐 -->
+                <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+
                 {% else %}
+                <!-- 지정하지 않은 글  -->
                 <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                 {% endif %}
                     <a href="{{site.baseurl}}{{post.url}}">
@@ -30,6 +33,7 @@
                     </a>
                     {% if site.toc.enabled %}
                         {% if page.url == post.url %}
+                        <!-- 선택한 목차의 하위 목록 -->
                             {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                         {% endif %}
                     {% endif %}
@@ -40,10 +44,10 @@
 
             <li>
                 <a href="https://www.youtube.com/watch?v=hr2xGbc6jO0&t=286s" target="blank" class="gitbook-link">
-                    이하이!
+                    Test!
                 </a>
             </li>
-            <li class="divider"></li>
         </ul>
+        
     </nav>
 </div>
