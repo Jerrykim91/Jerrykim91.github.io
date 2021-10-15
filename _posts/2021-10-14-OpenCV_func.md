@@ -1,8 +1,8 @@
 ---
-title: 제목
+title: OpenCV function
 author: jerry # 작성자 
 date: 2021-10-14 13:00:00 +0800 # 날짜
-category: 카테고리
+category: OpenCV
 layout: post
 ---
 
@@ -19,11 +19,10 @@ layout: post
 
 # OpenCV_func
 
-<br>
 
 ## 1. 마우스를 이용한 크롭 
 
-<br>
+
 
 ```py
 def onMouse(event, x, y, flags, param):
