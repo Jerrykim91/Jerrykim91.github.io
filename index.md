@@ -33,7 +33,9 @@ css,js가 너무 가독성도 없고 뜯어보기 너무 어려워서 ... 혹시
 gitbook도 이번에 패치해서 새롭게 바뀌었는가 도저히 안되겠더라구요. 노션처럼 하고 싶은건지 위키처럼하고 싶은건지 
 저에겐 뭔가 리폼하기 어려운 구조였습니다.  
 
-
+#### 추가 
+현재 카테고리형으로 sidebar 작업은 진행중입니다. 
+추가적인 액션 기능 추가 후 마무리 예정입니다. 
 
 
 #### 공사 내용 
@@ -49,7 +51,7 @@ gitbook도 이번에 패치해서 새롭게 바뀌었는가 도저히 안되겠�
 ### Git History
 
 <!-- 코드 중간 : github commit history -->
-<a class="introduce_link" href="https://github.com/madplay" rel="nofollow" target="_blank">Github</a>
+<a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
 	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
 
 
