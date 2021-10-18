@@ -3,44 +3,47 @@
         <input type="text" placeholder="Type to search" />
     </div> -->
     <nav role="navigation">
+        <!-- 테스트 : 서브 toc -->
         <ul class="summary">
-            {% if page.url == "/index.html" or page.url == "/" %}
+        <!--  홈 : 타이틀 페이지 -->
+        {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}">
-            {% else %}
+        {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
-            {% endif %}
+        {% endif %}
                 <!-- 하위 목차 -->
                 <a href="{{site.baseurl}}">
                     {{ site.title | escape }}
                 </a>
             </li>
-            <li class="divider"></li>
-            
-            {% assign reversed_posts = site.posts | reverse %}
-            
-            {% for post in reversed_posts %}
-            <!-- 목차 : 헤드라인 -->
-                {% if page.url == post.url %}
-                <!-- 지정한 글 : 하위까지 보여짐 -->
-                <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
 
-                {% else %}
-                <!-- 지정하지 않은 글  -->
-                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                {% endif %}
+        <li class="divider"></li>
+
+        <!-- 카테고리 페이지 -->
+        {% for category in site.categories %}
+                <li class="chapter active"  data-level="1.1">
+                    <a href="{{ site.baseurl }}/{{ site.category_dir }}{{ category | first }}">{{category[0]}}</a>
+                </li>
+            {% for post in category[1] %}
+                <li class="chapter" data-level="1.1">
+                    <!-- <a href="{{ category.url }}">{{ post.title | escape }}</a> -->
                     <a href="{{site.baseurl}}{{post.url}}">
                         {{ post.title | escape }}
                     </a>
+                </li>
+                    
                     {% if site.toc.enabled %}
                         {% if page.url == post.url %}
                         <!-- 선택한 목차의 하위 목록 -->
                             {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                         {% endif %}
                     {% endif %}
-                </li>
             {% endfor %}
-
             <li class="divider"></li>
+
+        {% endfor %}
+
+        <li class="divider"></li>
 
             <li>
                 <a href="https://www.youtube.com/watch?v=hr2xGbc6jO0&t=286s" target="blank" class="gitbook-link">
@@ -49,8 +52,16 @@
             </li>
             <!-- 작업중 : 카테고리 // https://jekyllrb-ko.github.io/docs/pages/ -->
             <li class="divider"></li>
-            <p>{{category}}</p>
-        </ul>
         
+        </ul>
+
     </nav>
 </div>
+
+
+<!-- 해야할거 -->
+<!-- 1. 카테고리 페이지 만들기
+     카테고리를 클릭하면 출력 되도록 만들어야 함 
+-->
+<!-- 2. 클릭하면 줄어드는거 -> 있으면 좋겠는데   -->
+<!-- 3. 이건 기억이 잘 안나는구만?  -->

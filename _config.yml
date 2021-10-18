@@ -75,3 +75,10 @@ utterances:
 
 # theme: jekyll-theme-cayman  # 웨 하는지 모름 
 
+
+# category: 텍스트
+# categories: [ 배열 ]
+
+# 카테고리 리스트 
+# category_list: [ML,Test,info,OpenCV]
+

@@ -3,6 +3,7 @@ title: Machine Learning
 author: jerry
 date: 2021-10-13 09:10:00 +0800
 category: ML
+# permalink: '/ML'
 layout: post
 ---
 <!-- 코드 상단 : 방문자 수 확인 -->
@@ -450,6 +451,15 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 
 
 
+            {% for category in site.categories %}
+            <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}"
+            class="sidebar-nav-item pl-3rem">
+                                <span class="name">
+                                    {{ category | first }}
+                                </span>
+            <span class="badge">{{ category | last | size }}</span>
+            </a>
+            {% endfor %}
 
 <br>
 
