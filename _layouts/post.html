@@ -7,7 +7,7 @@
         {% if page.previous %}
             <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
         {% else %}
-            <link rel="prev" href="{{site.baseurl}}/" />
+            <link rel="prev" href="{{site.baseurl}}" />
         {% endif %}
 
         {% if page.next %}
@@ -45,7 +45,7 @@
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
             </script>
-            {%- include search.html -%}
+            <!-- {%- include search.html -%} -->
         </div>
 
         {%- include footer.html -%}

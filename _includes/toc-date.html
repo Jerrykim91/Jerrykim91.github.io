@@ -17,7 +17,7 @@
             <li class="divider"></li>
             
             {% assign reversed_posts = site.posts | reverse %}
-            <p>{{reversed_posts[0].posts.1}}</p>
+            
             {% for post in reversed_posts %}
             <!-- 목차 : 헤드라인 -->
                 {% if page.url == post.url %}
@@ -47,6 +47,9 @@
                     Test!
                 </a>
             </li>
+            <!-- 작업중 : 카테고리 // https://jekyllrb-ko.github.io/docs/pages/ -->
+            <li class="divider"></li>
+            <p>{{category}}</p>
         </ul>
         
     </nav>
