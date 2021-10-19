@@ -49,7 +49,7 @@ gitbook도 이번에 패치해서 새롭게 바뀌었는가 도저히 안되겠�
 ### Git History
 
 <!-- 코드 중간 : github commit history -->
-<a class="introduce_link" href="https://github.com/madplay" rel="nofollow" target="_blank">Github</a>
+<a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
 	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
 
 
