@@ -19,10 +19,9 @@
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
         {% endif %}
             
-                <!-- 하위 목차 -->
-                <ul><a href="{{site.baseurl}}">{{ site.title | escape }}</a>
-                    <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
-                </ul>
+            <!-- 하위 목차 -->
+            <a href="{{site.baseurl}}">{{ site.title | escape }}</a>
+                <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
             </li>
 
         <li class="divider"></li>
@@ -44,7 +43,6 @@
                     {% endif %}
 
             {% endfor %}
-            <li class="divider"></li>
 
         {% endfor %}
 
