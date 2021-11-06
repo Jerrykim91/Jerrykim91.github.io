@@ -3,7 +3,7 @@
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        {% assign reversed_categories = site.categories | reverse %}
+        {% assign reversed_categories = post.categories | reverse %}
         {% if reversed_categories %}
         {* "next": {
             "title": "{{reversed_categories.title}}",
