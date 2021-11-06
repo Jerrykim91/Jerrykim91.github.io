@@ -1,6 +1,6 @@
 ---
 title: OpenCV function
-author: jerry # 작성자 
+author: Jerry # 작성자 
 date: 2021-10-14 13:00:00 +0800 # 날짜
 category: OpenCV
 layout: post

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: category
+title: Category
 ---
 
 <!-- 하위 목차 -->
 
 {% for category in site.categories %}
-    <li class="chapter active"  data-level="1.1">
-    <a>{{category[0]}}</a> 
-    <a href="{{site.baseurl}}/{{category[0]}}/">{{category[0]}}</a>
-    {% for post in category[1] %}
-        <a href="{{site.baseurl}}{{post.url}}">
-            {{ post.title | escape }}
-        </a>
-    {% endfor %}
+    <h4>{{category[0]}}</h4> 
+     <li class="chapter active"  data-level="1.1">
+        {% for post in category[1] %}
+            <a href="{{site.baseurl}}{{post.url}}">
+                {{ post.title | escape }}
+            </a>
+        {% endfor %}
+    </li>
     <br>
 {% endfor %}
 
