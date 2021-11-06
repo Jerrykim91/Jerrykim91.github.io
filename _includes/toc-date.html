@@ -1,4 +1,11 @@
 <div class="book-summary">
+
+     <!-- <style>
+    ul{
+    list-style:none;
+    }
+    </style>  -->
+
     <!-- <div id="book-search-input" role="search">
         <input type="text" placeholder="Type to search" />
     </div> -->
@@ -11,15 +18,11 @@
         {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
         {% endif %}
-                <!-- 하위 목차 -->
-                <a href="{{site.baseurl}}">
-                    {{ site.title | escape }}
-                </a>
-                
-                &nbsp; <a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link">
-                    categories!
-                </a>
             
+                <!-- 하위 목차 -->
+                <ul><a href="{{site.baseurl}}">{{ site.title | escape }}</a>
+                    <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
+                </ul>
             </li>
 
         <li class="divider"></li>

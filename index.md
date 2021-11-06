@@ -13,6 +13,7 @@ layout: home
 <br>
 
 
+
 ### Git History
 
 <!-- 코드 중간 : github commit history -->
@@ -30,11 +31,13 @@ Main page
 
 - category : 기능 추가 작업 중(80%) 
 - search : 기능 개발 중 
-- Directory : 기능 개발 중
+	- Algolia를 이용해 검색 기능 추가 진행 예정 
+
+
 
 #### issue
 
--  페이지 이동시 끊김?이 존재 
+- 페이지 이동시 끊김?이 존재 - 추적 중 
 
 
 ---

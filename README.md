@@ -7,9 +7,3 @@
 
 
 <!-- https://github.com/madplay/madplay.github.io/blob/master/timeline.html -->
-
-
-<!-- git search -->
-<!-- https://imyeonn.github.io/blog/blog/30/ -->
-<!-- https://moon9342.github.io/jekyll-search -->
-<!-- https://shinye0213.tistory.com/m/323 -->
