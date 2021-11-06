@@ -24,9 +24,12 @@ Main page
 - search : 기능 개발 중 
 - Directory : 기능 개발 중
 
+### issue
+
+-  페이지 이동시 끊김?이 존재 
 
 
-
+---
 
 
 ### Git History

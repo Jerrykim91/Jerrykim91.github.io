@@ -19,32 +19,22 @@
 
         <li class="divider"></li>
 
-        <!-- 카테고리 페이지 -->
+        <!-- 상위 출력 -->
         {% for category in site.categories %}
                 <li class="chapter active"  data-level="1.1">
-                    <!-- <a>{{category[0]}}</a> -->
                     <a href="{{site.baseurl}}/{{category[0]}}">{{category[0]}}</a>
-                    <!-- <a href="{{ site.baseurl }}/{{ site.category_dir }}{{ category | first }}">{{category[0]}}</a> -->
             {% for post in category[1] %}
                 <li class="chapter" data-level="1.1">
-                    <!-- <p>{{site.baseurl}}{{post.categories}}</p> -->
-
-                    <!-- # 카테고리 출력 -->
-                    <!-- <a href="{{site.baseurl}}{{post.categories}}">
-                        {{post.categories}}
-                    </a> -->
-
                     <a href="{{site.baseurl}}{{post.url}}">
                         {{ post.title | escape }}
                     </a>
                 </li>
-                    
                     {% if site.toc.enabled %}
                         {% if page.url == post.url %}
-                        <!-- 선택한 목차의 하위 목록 -->
                             {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                         {% endif %}
                     {% endif %}
+
             {% endfor %}
             <li class="divider"></li>
 
@@ -61,11 +51,10 @@
             <li class="divider"></li>
             <li>
                 <a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link">
-                    Test!
+                    categories - Test!
                 </a>
             </li>
         </ul>
-
     </nav>
 </div>
 
