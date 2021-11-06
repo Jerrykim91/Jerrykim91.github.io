@@ -1,0 +1,21 @@
+---
+layout: post
+title: Data Analytics
+---
+
+icon : 💡 📌 🔍 👩‍💻
+<!-- OpenCV 카테고리 -->
+{% assign pages_list = site.categories %}
+{% for node in pages_list %}
+    {% if node[0] == "Data Analytics" %}
+        {% comment %} <h2>{{node[0]}}</h2> {% endcomment %}
+        {% for post in node[1] %}
+            {% comment %} <h5 href="{{site.baseurl}}{{page.url}}/">{{site.baseurl}}{{page.url}}{{ site.category}}</h5> {% endcomment %}
+            <hr>
+            <a href="{{site.baseurl}}{{post.url}}">
+                {{ post.title | escape }}
+            </a>
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
