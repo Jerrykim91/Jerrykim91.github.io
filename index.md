@@ -13,6 +13,14 @@ layout: home
 <br>
 
 
+### Git History
+
+<!-- 코드 중간 : github commit history -->
+<a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
+	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
+
+
+
 
 Main page
 ---
@@ -24,20 +32,12 @@ Main page
 - search : 기능 개발 중 
 - Directory : 기능 개발 중
 
-### issue
+#### issue
 
 -  페이지 이동시 끊김?이 존재 
 
 
 ---
-
-
-### Git History
-
-<!-- 코드 중간 : github commit history -->
-<a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
-	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
-
 
 
 <br>
