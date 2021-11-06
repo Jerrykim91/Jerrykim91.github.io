@@ -1,12 +1,12 @@
 ---
-title: Machine Learning
-author: jerry
+title: Machine Learning - ML
+author: Jerry
 date: 2021-10-13 09:10:00 +0800
-categories: [ML]
-tags: [writing, ML]
-mermaid: true
-math: true
+category: ML
+# permalink: '/ML'
+layout: post
 ---
+<h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
 <!-- 코드 상단 : 방문자 수 확인 -->
 <a href="https://hits.seeyoufarm.com">
                         <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
@@ -18,9 +18,7 @@ Ps. test 작업용입니다.
 
 #### 01. ML - Machine Learning
 
-<br>
 
-# Machine Learning - ML
 
 <br>
 

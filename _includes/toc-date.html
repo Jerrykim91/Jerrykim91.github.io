@@ -1,4 +1,11 @@
 <div class="book-summary">
+
+     <!-- <style>
+    ul{
+    list-style:none;
+    }
+    </style>  -->
+
     <!-- <div id="book-search-input" role="search">
         <input type="text" placeholder="Type to search" />
     </div> -->
@@ -11,35 +18,31 @@
         {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
         {% endif %}
-                <!-- 하위 목차 -->
-                <a href="{{site.baseurl}}">
-                    {{ site.title | escape }}
-                </a>
+            
+            <!-- 하위 목차 -->
+            <a href="{{site.baseurl}}">{{ site.title | escape }}</a>
+                <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
             </li>
 
         <li class="divider"></li>
 
-        <!-- 카테고리 페이지 -->
+        <!-- 상위 출력 -->
         {% for category in site.categories %}
                 <li class="chapter active"  data-level="1.1">
-                    <a href="{{ site.baseurl }}/{{ site.category_dir }}{{ category | first }}">{{category[0]}}</a>
-                </li>
+                    <a href="{{site.baseurl}}/{{category[0]}}">{{category[0]}}</a>
             {% for post in category[1] %}
                 <li class="chapter" data-level="1.1">
-                    <!-- <a href="{{ category.url }}">{{ post.title | escape }}</a> -->
                     <a href="{{site.baseurl}}{{post.url}}">
                         {{ post.title | escape }}
                     </a>
                 </li>
-                    
                     {% if site.toc.enabled %}
                         {% if page.url == post.url %}
-                        <!-- 선택한 목차의 하위 목록 -->
                             {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                         {% endif %}
                     {% endif %}
+
             {% endfor %}
-            <li class="divider"></li>
 
         {% endfor %}
 
@@ -47,13 +50,13 @@
 
             <li>
                 <a href="https://www.youtube.com/watch?v=hr2xGbc6jO0&t=286s" target="blank" class="gitbook-link">
-                    Test!
+                    이하이!
                 </a>
             </li>
             <!-- 작업중 : 카테고리 // https://jekyllrb-ko.github.io/docs/pages/ -->
             <li class="divider"></li>
-        
+            
         </ul>
-
     </nav>
 </div>
+
