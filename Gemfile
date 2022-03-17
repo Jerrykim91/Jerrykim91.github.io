@@ -4,8 +4,13 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll"
-gem 'jemoji'
 gem 'webrick'
-gem "jekyll-algolia"
+
 
 # gem "rails"
+
+group :jekyll_plugins do
+    gem "jekyll-algolia"
+    gem "jemoji"
+    gem "jekyll-include-cache"
+end
