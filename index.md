@@ -21,8 +21,7 @@ layout: home
 	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
 
 
-<div class="search-searchbar"></div>
-<div class="search-hits"></div>
+
 
 ---
 
@@ -42,8 +41,6 @@ Main page
 
 
 #### issue
-
-- 페이지 이동시 끊김?이 존재 - 추적 중 
 
 
 
