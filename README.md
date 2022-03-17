@@ -7,3 +7,4 @@
 
 
 <!-- https://github.com/madplay/madplay.github.io/blob/master/timeline.html -->
+<!-- https://app.travis-ci.com/github/Jerrykim91/jerrykim91.github.io/settings -->

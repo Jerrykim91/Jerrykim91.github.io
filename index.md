@@ -21,7 +21,8 @@ layout: home
 	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
 
 
-<div id="search-searchbar"></div>
+<div class="search-searchbar"></div>
+<div class="search-hits"></div>
 
 ---
 

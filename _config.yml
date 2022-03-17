@@ -69,3 +69,13 @@ algolia:
   # files_to_exclude       : []
   # nodes_to_index         : 'article'
   search_only_api_key    : 9643fbc699bf629337e56a0bb5ead751
+
+
+
+
+# {%- assign search_provider = site.search_provider | default: "lunr" -%}
+# {%- case search_provider -%}
+# {%- when "lunr" -%}
+# {%- when "google" -%}
+# {%- when "algolia" -%}
+# {%- endcase -%}
