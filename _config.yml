@@ -66,6 +66,6 @@ search_provider          : algolia
 algolia:
   application_id         : SX0PUH59XX 
   index_name             : Jerry's_CodeBook
-  files_to_exclude       : []
-  nodes_to_index         : 'article'
+  # files_to_exclude       : []
+  # nodes_to_index         : 'article'
   search_only_api_key    : 9643fbc699bf629337e56a0bb5ead751
