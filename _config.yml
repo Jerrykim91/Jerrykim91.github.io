@@ -62,6 +62,7 @@ utterances:
 search                   : true 
 search_full_content      : true
 search_provider          : algolia
+
 algolia:
   application_id         : SX0PUH59XX 
   index_name             : Jerry's CodeBook!
