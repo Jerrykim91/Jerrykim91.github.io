@@ -23,7 +23,7 @@ layout: home
 
 
 
-<script>
+<!-- <script>
 // Instanciating InstantSearch.js with Algolia credentials
 const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
@@ -78,7 +78,7 @@ $(document).ready(function () {
     }
   });
 });
-</script>
+</script> -->
 
 
 
