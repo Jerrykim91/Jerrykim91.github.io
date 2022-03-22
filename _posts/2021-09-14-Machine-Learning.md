@@ -2,7 +2,7 @@
 title: Machine Learning - ML
 author: Jerry
 date: 2021-10-13
-category: Jekyll #ML
+category: ML #ML Jekyll
 layout: post
 ---
 
