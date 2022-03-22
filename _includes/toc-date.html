@@ -1,53 +1,76 @@
 <div class="book-summary">
-
-     <!-- <style>
-    ul{
-    list-style:none;
-    }
-    </style>  -->
-
     <!-- <div id="book-search-input" role="search">
         <input type="text" placeholder="Type to search" />
     </div> -->
+
+
+    <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" />
+    </div>
+
     <nav role="navigation">
         <!-- 테스트 : 서브 toc -->
         <ul class="summary">
-        <!--  홈 : 타이틀 페이지 -->
-        {% if page.url == "/index.html" or page.url == "/" %}
+            <!--  홈 : 타이틀 페이지 -->
+            {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}">
-        {% else %}
+                {% else %}
             <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
-        {% endif %}
-            
-            <!-- 하위 목차 -->
-            <a href="{{site.baseurl}}">{{ site.title | escape }}</a>
-                <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
+                {% endif %}
+
+                <!-- 하위 목차 -->
+                <a href="{{site.baseurl}}">{{ site.title | escape }}</a>
+            <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link"> categories! </a></li>
             </li>
 
-        <li class="divider"></li>
+            <li class="divider"></li>
 
-        <!-- 상위 출력 -->
-        {% for category in site.categories %}
-                <li class="chapter active"  data-level="1.1">
-                    <a href="{{site.baseurl}}/{{category[0]}}">{{category[0]}}</a>
-            {% for post in category[1] %}
-                <li class="chapter" data-level="1.1">
-                    <a href="{{site.baseurl}}{{post.url}}">
-                        {{ post.title | escape }}
-                    </a>
-                </li>
-                    {% if site.toc.enabled %}
-                        {% if page.url == post.url %}
-                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                        {% endif %}
-                    {% endif %}
-
+            <!-- 상위 출력 -->
+            {% for category in site.categories %}
+            <!-- <p>{{ collection.label }}</p> -->
+            <li class="chapter active" data-level="1.1">
+                <a href="{{site.baseurl}}/{{category[0]}}">{{category[0]}}</a>
+                {% for post in category[1] %}
+            <li class="chapter" data-level="1.1">
+                <a href="{{site.baseurl}}{{post.url}}">
+                    {{ post.title | escape }}
+                </a>
+            </li>
+            {% if site.toc.enabled %}
+            {% if page.url == post.url %}
+            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
             {% endfor %}
 
-        {% endfor %}
+            <li class="divider"></li>
+            <!-- Test 22.03.22 -->
+            {% for collection in site.collections %}
+                <!-- <p>{{ collection.label }}</p> -->
+                {% if collection.output %}
+                    {% assign reversed_posts = site[collection.label] | reverse %}
 
-        <li class="divider"></li>
+                    {% for post in reversed_posts %}
+                        {% if page.url == post.url %}
+                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                        {% else %}
+                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                        {% endif %}
+                            <a href="{{site.baseurl}}{{post.url}}">
+                                {{ post.title | escape }}
+                            </a>
+                            {% if site.toc.enabled %}
+                                {% if page.url == post.url %}
+                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                {% endif %}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
 
+                    <li class="divider"></li>
+                {% endif %}
+                {% endfor %}
             <li>
                 <a href="https://www.youtube.com/watch?v=hr2xGbc6jO0&t=286s" target="blank" class="gitbook-link">
                     이하이!
@@ -55,8 +78,9 @@
             </li>
             <!-- 작업중 : 카테고리 // https://jekyllrb-ko.github.io/docs/pages/ -->
             <li class="divider"></li>
-            
+
         </ul>
     </nav>
 </div>
+
 
