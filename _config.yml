@@ -16,7 +16,6 @@ github_username:  jerrykim91
 
 url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl:          '/' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
-
 rss:              RSS
 
 toc:
