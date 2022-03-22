@@ -1,23 +1,22 @@
 ---
 title: OpenCV function
-author: jerry # 작성자 
+author: Jerry # 작성자 
 date: 2021-10-14 13:00:00 +0800 # 날짜
-category: OpenCV
+category: Jekyll #OpenCV
 layout: post
 ---
-
+<h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
 <!-- 코드 상단 :  -->
 <a href="https://hits.seeyoufarm.com">
 <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
 
 <br>
+
+
+#### 0. Open CV function - 자주 쓰는 함수 
+
 <br>
 
-#### 3. Open CV function - 자주 쓰는 함수 
-
-<br>
-
-# OpenCV_func
 
 
 ## 1. 마우스를 이용한 크롭 
