@@ -1,24 +1,22 @@
 # Configurations
-title:            Jerry's CodeBook!
-longtitle:        Jerry's CodeBook!
-author:           jerrykim91
-email:            jerrykim91.pub@gmail.com
+title:            Jekyll Gitbook
+longtitle:        Jekyll Gitbook
+author:           HE Tao
+email:            sighingnow@gmail.com
 description: >
-  This is jerry CodeBook!
+  Build Jekyll site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
-github_username:  jerrykim91
 
-url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          'https://jerrykim91.github.io' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
-#'/jekyll-gitbook'
+url:              'https://sighingnow.github.io'
+baseurl:          '/jekyll-gitbook'
 rss:              RSS
 
 toc:
-  enabled: true # 차례
+  enabled: true
   h_min: 1
-  h_max: 2
+  h_max: 3
 
 # markdown render engine.
 markdown:         kramdown
@@ -32,6 +30,8 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
+syntax_highlighter_style: colorful
+
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
@@ -39,42 +39,16 @@ permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
-  - Gemfile
-  - Gemfile.lock
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
 
 destination:      ./_site
 incremental:      false
 regenerate:       true
 
 plugins:
-  - jemoji
-  - jekyll-algolia
   - jekyll-feed
-utterances:
-  enable: true
-  repo: https://jerrykim91.github.io/jerrykim91.github.io
-  issue_term: title
-  theme: github-light
-
-# theme: jekyll-theme-cayman  # 웨 하는지 모름 
-
-
-search                   : true 
-search_full_content      : true
-search_provider          : algolia
-
-# algolia:
-#   application_id         : SX0PUH59XX 
-#   index_name             : Jerry's_CodeBook
-#   # files_to_exclude       : []
-#   # nodes_to_index         : 'article'
-#   search_only_api_key    : 9643fbc699bf629337e56a0bb5ead751
-
-
-syntax_highlighter_style: colorful
-
-# 주석 가능성 있음
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
+  - jemoji

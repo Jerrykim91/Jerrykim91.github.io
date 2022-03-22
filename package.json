@@ -1,7 +1,0 @@
-{
-    "homepage" : "https://jerrykim91.github.io/",
-    "script": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
-    }
-  }

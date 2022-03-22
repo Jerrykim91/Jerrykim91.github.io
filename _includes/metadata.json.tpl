@@ -22,13 +22,12 @@
             },
             "search": {},
             "sharing": {
-                "all": ["facebook", "google", "twitter", "weibo", "instapaper","github"],
-                "facebook": false,
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper"],
+                "facebook": true,
                 "google": false,
                 "instapaper": false,
-                "twitter": false,
+                "twitter": true,
                 "vk": false,
-                "github": true,
                 "weibo": false
             },
             "theme-default": {
