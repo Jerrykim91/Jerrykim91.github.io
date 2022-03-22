@@ -49,7 +49,7 @@ regenerate:       true
 plugins:
   - jemoji
   - jekyll-algolia
-
+  - jekyll-feed
 utterances:
   enable: true
   repo: https://jerrykim91.github.io/jerrykim91.github.io
@@ -63,19 +63,18 @@ search                   : true
 search_full_content      : true
 search_provider          : algolia
 
-algolia:
-  application_id         : SX0PUH59XX 
-  index_name             : Jerry's_CodeBook
-  # files_to_exclude       : []
-  # nodes_to_index         : 'article'
-  search_only_api_key    : 9643fbc699bf629337e56a0bb5ead751
+# algolia:
+#   application_id         : SX0PUH59XX 
+#   index_name             : Jerry's_CodeBook
+#   # files_to_exclude       : []
+#   # nodes_to_index         : 'article'
+#   search_only_api_key    : 9643fbc699bf629337e56a0bb5ead751
 
 
+syntax_highlighter_style: colorful
 
-
-# {%- assign search_provider = site.search_provider | default: "lunr" -%}
-# {%- case search_provider -%}
-# {%- when "lunr" -%}
-# {%- when "google" -%}
-# {%- when "algolia" -%}
-# {%- endcase -%}
+# 주석 가능성 있음
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
