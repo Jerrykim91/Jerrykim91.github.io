@@ -1,16 +1,30 @@
 # 노트(Notes.)
 
-### [jerrykim91.github.io](https://jerrykim91.github.io/)
+## News.
+
+<br>
+
+1. 22.03.22 블로그 초기화 후 최신버전으로 업데이트
+    - 검색기능 수정
+    - Back to Top 기능 버튼 추가    
+    - 페이지 Highlighter 스타일 변경 - Github 스타일 채택 
+
+<br>
+
+---
 
 
+
+<!-- #  My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/) -->
+
+- My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/)
 - Base_repo : https://sighingnow.github.io/jekyll-gitbook/
+- [다운로드 베이스 테마](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
+<br>
 
-
+<!-- ### Sample  -->
 <!-- https://github.com/madplay/madplay.github.io/blob/master/timeline.html -->
 <!-- https://app.travis-ci.com/github/Jerrykim91/jerrykim91.github.io/settings -->
-
-
-### Sample 
 
 
 <!-- https://github.com/algolia/algoliasearch-jekyll-hyde -->

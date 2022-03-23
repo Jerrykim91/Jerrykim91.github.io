@@ -15,11 +15,12 @@ layout: home
 
 
 
-### Git History
-<!-- github commit history -->
-<a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
-	<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
+### Git History 
 
+<!-- github commit history -->
+<!-- <a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a> -->
+<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
+<img height="32" width="32" src="https://unpkg.com/simple-icons@v6/icons/github.svg" />
 
 
 
@@ -47,3 +48,8 @@ Main page
 
 <br>
 <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
+
+
+<!-- 아이콘 사용 관련 리소스 -->
+<!-- 1. 소스 페이지  : https://simpleicons.org/?q=git-->
+<!-- 1.1 소스 페이지에 해당하는 github 페이지 : https://github.com/simple-icons/simple-icons -->
