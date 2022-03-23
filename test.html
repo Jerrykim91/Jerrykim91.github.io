@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./gitbook/modal_btn.css"> -->
 
     <link rel="stylesheet" href="./gitbook/style.css">
     <link rel="stylesheet" href="./gitbook/gitbook-plugin-fontsettings/website.css">
@@ -40,7 +41,7 @@
 
             display: none;
 
-            background-color: rgba(233, 227, 227, 0.4);
+            background-color: rgba(233, 227, 227, 0.151);
         }
 
         .modal.show {
@@ -49,7 +50,7 @@
 
         .modal_body {
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
 
             width: 600px;
@@ -59,9 +60,9 @@
 
             text-align: center;
 
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(248, 244, 183, 0.842);
             border-radius: 10px;
-            box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+            box-shadow: 0 2px 3px 0 rgba(237, 239, 241, 0.253);
 
             transform: translateX(-50%) translateY(-50%);
         }
@@ -79,8 +80,19 @@
 
     <div class="modal">
         <div class="modal_body">
-            <h1>Modal</h1>
-            <h5 style="font-size: 0.7px;">종료- 외부 클릭</h5>
+            <h1>감사합니다.</h1>
+            <img height="60" width="60" src="https://unpkg.com/simple-icons@v6/icons/kakao.svg" />
+            <button class="btn">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="text">Test Me!</span>
+              </button>
         </div>
     </div>
     <!-- <button class="btn-open-popup">Modal 띄우기</button> -->
@@ -116,6 +128,7 @@
 </body>
 <script src="./gitbook/gitbook.js"></script>
 <script src="./gitbook/theme.js"></script>
+<script src="./gitbook/modal_btn.js"></script>
 <script src="./gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
 <script src="./gitbook/gitbook-plugin-sharing/buttons.js"></script>
 <script src="./gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
