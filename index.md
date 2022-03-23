@@ -15,7 +15,7 @@ layout: home
 
 
 
-### Git History <img height="32" width="32" href="https://github.com/jerrykim91" src="https://unpkg.com/simple-icons@v6/icons/github.svg" />
+### Git History <a height="32" width="32" href="https://github.com/jerrykim91" src="https://unpkg.com/simple-icons@v6/icons/github.svg" />
 
 <!-- github commit history -->
 <!-- <a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a> -->
