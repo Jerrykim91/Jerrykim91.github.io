@@ -15,7 +15,7 @@ github_username:  jerrykim91
 # baseurl:          '/jekyll-gitbook'
 
 url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          '/Jerry's_Codebook' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
+baseurl:          'https://jerrykim91.github.io' #'/Jerry's_Codebook' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
 rss:              RSS
 
 toc:
@@ -35,7 +35,8 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
-syntax_highlighter_style: colorful
+syntax_highlighter_style: github
+# syntax_highlighter_style 옵션(rouge참조) : {colorful:흐리멍텅함- 내취향아님},{github:}
 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
