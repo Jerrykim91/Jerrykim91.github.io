@@ -61,6 +61,6 @@ plugins:
 
 utterances:
   enable: true
-  repo: https://jerrykim91.github.io/Jerry's_Codebook
+  repo: Jerrykim91/blog-comment
   issue_term: title
   theme: github-light
