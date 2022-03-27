@@ -27,7 +27,6 @@ layout: home
 
 <br>
 
-
 <!-- #### 앞으로 작업 할 내용 
 
 - category : 기능 추가 작업 중(80%) 
@@ -40,6 +39,7 @@ layout: home
 #### issue
 
  -->
+<a class="btn-open-popup" type="button" style="cursor:pointer">☕한잔</a>
 
 
 <br>

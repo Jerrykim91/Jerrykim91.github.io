@@ -1,10 +1,11 @@
 ---
 title: OpenCV function
 author: Jerry # 작성자 
-date: 2021-10-14 13:00:00 +0800 # 날짜
-category: OpenCV #OpenCV
+date: 2021-10-14
+category: Jekyll #OpenCV
 layout: post
 ---
+
 <h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
 <!-- 코드 상단 :  -->
 <a href="https://hits.seeyoufarm.com">
