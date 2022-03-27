@@ -2,7 +2,7 @@
 title: OpenCV function
 author: Jerry # 작성자 
 date: 2021-10-14 13:00:00 +0800 # 날짜
-category: Jekyll #OpenCV
+category: OpenCV #OpenCV
 layout: post
 ---
 <h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
