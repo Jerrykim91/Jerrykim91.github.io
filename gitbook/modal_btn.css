@@ -1,0 +1,82 @@
+
+  .btn_kakao {
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 17px;
+  background: #FEE500;
+  padding: 8px 30px 8px 30px;
+  text-decoration: none;
+
+/* 마진 */
+  margin-top: -30px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+
+}
+
+.btn_kakao:hover {
+  background: #FEE500;
+  text-decoration: none;
+
+}
+
+
+.btn_toss {
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 17px;
+  background: #0064FF;
+  padding: 8px 40px 8px 40px;
+  text-decoration: none;
+
+/* 마진 */
+  margin-top: -30px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+
+}
+
+.btn_toss:hover {
+  background: #0064FF;
+  text-decoration: none;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    /* color: #000000; */
+    text-decoration: none;
+}
+
+.btn-open-popup {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #bfbfbf; 
+  /* 색미정 */
+  /* padding: 8px 40px 8px 40px; orgin*/
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+
+/* 마진 */
+  margin-top: -30px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+
+}
+
+.btn_coffee:hover {
+  background: #bfbfbf;
+  text-decoration: none;
+}

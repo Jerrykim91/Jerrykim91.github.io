@@ -2,16 +2,7 @@
 title: Machine Learning - ML
 author: Jerry
 date: 2021-10-13
-category: Jekyll #ML
-layout: post
----
-
-
----
-title: License
-author: Tao He
-date: 2019-04-29
-category: Jekyll
+category: ML #ML Jekyll
 layout: post
 ---
 
@@ -469,19 +460,36 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 
 ## Reference <br>
 
-- wikipedia- knn :<https://ko.wikipedia.org/wiki/K-%EC%B5%9C%EA%B7%BC%EC%A0%91_%EC%9D%B4%EC%9B%83_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98> <br>
-- wikipedia - Mean_squared_error :<https://en.wikipedia.org/wiki/Mean_squared_error>
-- mizykk &nbsp; : &nbsp;<https://mizykk.tistory.com/102>
+- [wikipedia- knn][1]
+- [wikipedia- Mean_squared_error][2]
+- [mizykk][3]
+
+
 - 테디 노트 &nbsp; : &nbsp;<https://teddylee777.github.io/scikit-learn/scikit-learn-linear-with-regularizations>
 - scikit-learn - algorithm cheat-sheet &nbsp; : &nbsp;<https://scikit-learn.org/stable/_static/ml_map.png>
 
 <br><br>
+
+[1]: https://ko.wikipedia.org/wiki/K-%EC%B5%9C%EA%B7%BC%EC%A0%91_%EC%9D%B4%EC%9B%83_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+[2]: https://en.wikipedia.org/wiki/Mean_squared_error
+[3]: https://mizykk.tistory.com/102
+
 
 
 <!-- 코드라인 -->
 <br>
 <script src="https://utteranc.es/client.js"
     repo="Jerrykim91/jerrykim91.github.io"
+    issue-term="title"
+    label="😎"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+<br>
+<br>
+<script src="https://utteranc.es/client.js"
+    repo="Jerrykim91/jerrykim91.github.io/Jerry's_Codebook"
     issue-term="title"
     label="😎"
     theme="github-light"

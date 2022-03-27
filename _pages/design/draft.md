@@ -1,6 +1,6 @@
 ---
 title: Design Draft
-author: Tao He
+author: Jerry
 date: 2022-02-03
 category: Jekyll
 layout: post

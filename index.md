@@ -2,62 +2,51 @@
 layout: home
 ---
 
-Make Jelly site have a GitBook look!
 
-## Demo
+<!-- 코드 상단 : 방문자 수 확인 -->
+<a href="https://hits.seeyoufarm.com">
+<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+<br>
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
 
-## Why Jekyll with GitBook
+<br>
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
+### Git History    <a href="https://github.com/jerrykim91"><img height="18" width="32" src="https://unpkg.com/simple-icons@v6/icons/github.svg" /></a>
 
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
 
-## How to Get Started
+<!-- github commit history -->
+<!-- <a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a> -->
+<img src="https://ghchart.rshah.org/jerrykim91" alt="Github Image" style="max-width:100%">
 
-This theme can be used just as other [Jekyll themes][1].
 
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
+<br>
 
-### Deploy Locally with Jekyll Serve
+**좋아하는 직업을 선택하면 평생 하루도 일하지 않아도 된다! 핳!**
+<!-- - 언제 어디서나 빠르게 작성하고 읽기위해 만든 페이지입니다.  -->
 
-This theme can be ran locally using Ruby and Gemfiles.
+<br>
 
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
 
-## Full-text search
+<!-- #### 앞으로 작업 할 내용 
 
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
+- category : 기능 추가 작업 중(80%) 
+- search : 기능 개발 중 
+	- Algolia를 이용해 검색 기능 추가 진행 예정 
+- 다른 깃허브 레파지토리(repository)연동 해보기 
 
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
 
-## Code highlight
 
-The code highlight style is configurable the following entry in `_config.yaml`:
+#### issue
 
-```yaml
-syntax_highlighter_style: colorful
-```
+ -->
 
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./gitbook/rouge/](./gitbook/rouge/).
 
-## How to generate TOC
+<br>
+<link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
 
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!-- 코드 중간 : github commit history -->
 <a class="introduce_link" href="https://github.com/jerrykim91" rel="nofollow" target="_blank">Github</a>
@@ -83,3 +72,8 @@ Copyright 2019 Tao He.
 [4]: https://github.com/allejo/jekyll-toc
 [5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
 [6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
+=======
+<!-- 아이콘 사용 관련 리소스 -->
+<!-- 1. 소스 페이지  : https://simpleicons.org/?q=git-->
+<!-- 1.1 소스 페이지에 해당하는 github 페이지 : https://github.com/simple-icons/simple-icons -->
+>>>>>>> 6ccb90fa49af90b9989e1ba1cd811adf9c0eda67
