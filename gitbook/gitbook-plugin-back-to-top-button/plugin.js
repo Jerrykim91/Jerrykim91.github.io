@@ -14,7 +14,8 @@ require([
             $(this).css('cursor', 'auto');
         });
     
-        $('.book-body,.body-inner').on('scroll', function () {
+        // 22.04.06 수정 -> ('.book-body,.body-inner') -> ('.book-body,.body-inner,.page-wrapper')
+        $('.book-body,.body-inner,.page-wrapper').on('scroll', function () {
             if ($(this).scrollTop() > 100) { 
                 $('.back-to-top').fadeIn();
             } else {
