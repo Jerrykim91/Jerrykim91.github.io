@@ -4,6 +4,9 @@
 
 <br>
 
+2. 22.04.06 최신버전으로 업데이트
+- [Is it possible to freeze the position of panel book-header](https://github.com/sighingnow/jekyll-gitbook/issues/18)
+
 1. 22.03.22 블로그 초기화 후 최신버전으로 업데이트
     - 검색기능 수정
     - Back to Top 기능 버튼 추가    
@@ -18,8 +21,8 @@
 <!-- #  My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/) -->
 
 - My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/)
-- Base_repo : https://sighingnow.github.io/jekyll-gitbook/
-- [다운로드 베이스 테마](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
+- Base Theme. : https://sighingnow.github.io/jekyll-gitbook/
+- [Download Base Theme](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
 <br>
 
 <!-- ### Sample  -->
