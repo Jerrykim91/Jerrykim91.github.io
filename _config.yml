@@ -14,8 +14,14 @@ github_username:  jerrykim91
 # url:              'https://sighingnow.github.io'
 # baseurl:          '/jekyll-gitbook'
 
+# 사이트 업로드시
 url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl:          'https://jerrykim91.github.io' #'/Jerry's_Codebook' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
+
+# 로컬 작업시
+# url:              'http://127.0.0.1:4000/' # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl:          '' # 로컬 작업시 
+
 rss:              RSS
 
 toc:
