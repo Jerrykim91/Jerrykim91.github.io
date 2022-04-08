@@ -1,10 +1,10 @@
 ---
 title: About Me🙄
 author: Jerry
-date: 2021-10-14 09:00:00 +0800
-category: Jekyll #info
 layout: post
 ---
+
+
 <h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
 
 <!-- 코드 상단 : 방문자 수 확인 -->
@@ -22,7 +22,7 @@ layout: post
 
 ---
 
-<center><img src="../img/img.jpeg" width="400" height="300"></center>
+<center><img src="..\img\img.jpeg" width="400" height="300"></center>
 
 ---
 

@@ -47,15 +47,11 @@ syntax_highlighter_style: github
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink:        /:categories/:year-:month-:day-:title:output_ext
+# permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
 
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
 
 destination:      ./_site
 incremental:      false
@@ -71,3 +67,39 @@ utterances:
   repo: Jerrykim91/blog-comment
   issue_term: title
   theme: github-light
+
+
+# 상위 디렉토리 추가 
+collections:
+  # Intro:
+  #   output: true
+  #   permalink: /:collection/:path/
+  #   order:
+
+  # Pages:
+  #   output: true
+  #   permalink: /:collection/:path/
+  #   order:
+
+  MachineVision:
+    output: true
+    permalink: /:collection/:path/
+    order:
+
+  Python:
+    output: true
+    permalink: /:collection/:path/
+    order:
+
+  MachineLearning:
+    output: true
+    permalink: /:collection/:path/
+    order:
+
+  Analysis:
+    output: true
+    permalink: /:collection/:path/
+    order:
+      # 아래부터 상위에 노출됨 
+      - 2022-03-31-Pandas_2.md
+      - 2021-10-15-1.1.Pandas_1.md

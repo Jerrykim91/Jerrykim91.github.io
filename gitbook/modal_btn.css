@@ -61,11 +61,13 @@ a:link, a:visited,  a:hover, a:active
   border-radius: 7px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 14px;
-  background: #bfbfbf; 
+  font-size: 15px;
+  font-weight: bold;
+  background: rgba(190, 136, 236, 0.5);
+  /* #bfbfbf;  */
   /* 색미정 */
   /* padding: 8px 40px 8px 40px; orgin*/
-  padding: 5px 10px 5px 10px;
+  padding: 9px 12px 9px 12px;
   text-decoration: none;
 
 /* 마진 */

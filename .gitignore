@@ -1,4 +1,7 @@
 _site/
 _draft/
+_dummy/
 .jekyll-cache/
 Gemfile.lock
+_doc/
+# _yet/

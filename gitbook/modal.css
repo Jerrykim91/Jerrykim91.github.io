@@ -53,7 +53,7 @@
 
     .modal_body {
         position: absolute;
-        top: 60%;
+        top: 75%;
         left: 50%;
 
         width: 600px;
@@ -63,8 +63,7 @@
 
         text-align: center;
 
-        background-color: rgb(243, 247, 252);
+        background-color: #fafafa;
         border-radius: 10px;
-        box-shadow: 0 2px 3px 0 rgba(237, 239, 241, 0.253);
-
+        box-shadow: 0 2px 3px 0  rgb(86 86 86 / 25%);
         transform: translateX(-50%) translateY(-50%);

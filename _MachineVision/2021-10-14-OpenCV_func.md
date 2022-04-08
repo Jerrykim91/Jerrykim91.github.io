@@ -2,7 +2,7 @@
 title: OpenCV function
 author: Jerry # 작성자 
 date: 2021-10-14
-category: Jekyll #OpenCV
+# category: Jekyll #OpenCV
 layout: post
 ---
 
@@ -124,11 +124,6 @@ cv2.destroyAllWindows()
 - 파이썬으로 만드는 OpenCV 프로젝트 &nbsp; : &nbsp;<http://www.yes24.com/Product/Goods/71534451?OzSrank=1> <br>
 - 귀퉁이 서재 &nbsp; : &nbsp; <https://bkshin.tistory.com/entry/OpenCV-6-dd><br>
 <br>
-<br>
-
-## Practice makes perfect! <br>
-
-<!-- - [내용](주소) -->
 
 
 <!-- 코드 하단 -->

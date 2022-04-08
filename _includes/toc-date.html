@@ -1,48 +1,101 @@
+<!-- <style type="text/css">
+    a:link { color: red; text-decoration: none;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: blue; text-decoration: none;}
+    폰트 색 - style="color: rgb(5, 0, 0);"
+    폰트 색 없음 - style="color: inherit;"
+    폰트 언더라인 - style="text-decoration: none;"
+   </style> -->
+
+
 
 <div class="book-summary">
     <div id="book-search-input" role="search">
         <input type="text" placeholder="Type to search" />
     </div>
     <nav role="navigation">
+        <!-- 테스트 : 서브 toc -->
         <ul class="summary">
+            <!--  홈 : 타이틀 페이지 -->
             {% if page.url == "/index.html" or page.url == "/" %}
-            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}" >
             {% else %}
-            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
             {% endif %}
-                <a href="{{site.baseurl}}/">
-                    {{ site.title | escape }}
-                </a>
+                <!-- 하위 목차 -->
+                <!-- <a href="{{site.baseurl}}" style="color: inherit;">{{ site.title | escape }}</a> -->
+                <a href="{{site.baseurl}}" style="color: inherit; font-weight: bold;">🏡 HOME</a>
+                <a href="{{site.baseurl}}/about/" style="color: inherit; font-weight: bold;" target="_blank">🖐 AboutMe</a>
+                <a href="https://jerrykim91.github.io/PortfolioPage/" style="color: inherit; font-weight: bold;" target="_blank">👩‍💻 PortfolioPage</a>
+                
+                <!-- <a href="https://github.com/jerrykim91" style="color: inherit; font-weight: bold;" target="_blank">👩‍💻 Github</a> -->
+                <!-- 👩‍💻 [Github.](https://github.com/jerrykim91) -->
+                
+                <!-- <hr> -->
+                <!-- <li><a href="{{site.baseurl}}/category/" target="blank" class="gitbook-link" style="color: inherit;"> Categories! </a></li> -->
             </li>
-
-            <li class="divider"></li>
-
+            
+            
+            <!-- 상위 출력 -->
             {% for collection in site.collections %}
-                <!-- <p>{{ collection.label }}</p> -->
+                <br>
+                {% if collection.label != "posts" %}
+                    {% if collection.label != "Intro" %}
+                        <h3 style="color: rgb(5, 0, 0);"> &nbsp;&nbsp;&nbsp; {{ collection.label }}</h3>
+                        <li class="divider"></li>
+                    {% endif %}
+                {% endif %}
+
                 {% if collection.output %}
                     {% assign reversed_posts = site[collection.label] | reverse %}
 
-                    {% for post in reversed_posts %}
+                    {% for post in reversed_posts %}                        
                         {% if page.url == post.url %}
-                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}" style="color: rgba(190, 136, 236, 0.8); font-weight: bold;">
                         {% else %}
-                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}" style="color: inherit;">
                         {% endif %}
-                            <a href="{{site.baseurl}}{{post.url}}">
+
+                        {% if collection.label != "posts" %}
+                            <a href="{{site.baseurl}}{{post.url}}" style="color: inherit;">
                                 {{ post.title | escape }}
                             </a>
-                            {% if site.toc.enabled %}
-                                {% if page.url == post.url %}
-                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                                {% endif %}
+                        {% endif %}
+
+                        {% if site.toc.enabled %}
+                            {% if page.url == post.url %}
+                                {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                             {% endif %}
+                        {% endif %}
+
                         </li>
                     {% endfor %}
-
-                    <li class="divider"></li>
-                    
                 {% endif %}
+                <br>
             {% endfor %}
+
+<!-- 
+            {% for category in site.categories %}
+                    <li class="chapter active"  data-level="1.2" >
+                        <a href="{{site.baseurl}}/{{category[0]}}" style="text-decoration: none; text-shadow: 0 0 20px;">{{category[0]}}</a>
+                    </li>
+                    
+                {% for post in category[1] %}
+                    <li class="chapter" data-level="1.1" >
+                        <a href="{{site.baseurl}}{{post.url}}" style="text-decoration:none">
+                            {{ post.title | escape }}
+                        </a>
+                    </li>
+                        {% if site.toc.enabled %}
+                            {% if page.url == post.url %}
+                                {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                            {% endif %}
+                        {% endif %}
+
+                {% endfor %}
+                <br>
+            {% endfor %} -->
+            <!-- <br> -->
             <!-- <li class="divider"></li> -->
 
             <!-- <a class="btn_coffee" type=button onclick="btnOpenPopup()">
@@ -60,6 +113,11 @@
                     Fork it Now!
                 </a>
             </li> -->
+            <!-- <a class="btn-open-popup" type="button" style="cursor:pointer">☕한잔</a> -->
+            <br>
+
+            &nbsp; <a class="btn-open-popup" type="button" style="cursor:pointer">&nbsp; ☕ 커피 한잔 👉 &nbsp;</a>
+            
         </ul>
     </nav>
 </div>
