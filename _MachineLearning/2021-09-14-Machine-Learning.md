@@ -1,9 +1,7 @@
 ---
 title: Machine Learning - ML
 author: Jerry
-date: 2021-10-13
-# category: ML #ML Jekyll
-layout: Post
+layout: post
 ---
 
 
@@ -487,13 +485,3 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
     async>
 </script>
 <br>
-<!-- <br>
-<script src="https://utteranc.es/client.js"
-    repo="Jerrykim91/jerrykim91.github.io/Jerry's_Codebook"
-    issue-term="title"
-    label="😎"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-</script>
-<br> -->
