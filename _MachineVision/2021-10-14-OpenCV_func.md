@@ -1,8 +1,7 @@
 ---
-title: OpenCV function
+title: Open CV function - 자주 쓰는 함수 
 author: Jerry # 작성자 
 date: 2021-10-14
-# category: Jekyll #OpenCV
 layout: post
 ---
 
@@ -14,7 +13,7 @@ layout: post
 <br>
 
 
-#### 0. Open CV function - 자주 쓰는 함수 
+#### 10. Open CV function - 자주 쓰는 함수 
 
 <br>
 
@@ -73,7 +72,7 @@ cv2.destroyAllWindows()
 <br><br>
 
 
-
+<!-- 
 
 ## 2.
 
@@ -107,10 +106,7 @@ cv2.destroyAllWindows()
 
 ```
 
-<br><br>
-
-
-
+<br><br> -->
 
 
 <br>

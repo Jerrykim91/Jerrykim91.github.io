@@ -32,27 +32,12 @@ Ps. test 작업용입니다.
 
 <br>
 
-### 1) Min-Max Normalization (최소-최대 정규화)
-
-<br>
-
-```py
-
-```
-
-### 2) Z-Score Normalization (Z-점수 정규화)
-
-<br>
-
-```py
-
-```
-
+### 참고 페이지 노출 
 
 <br><br>
 
 
-
+<!-- 
 
 ## 2.
 <br>
@@ -75,7 +60,7 @@ Ps. test 작업용입니다.
 
 ```
 
-<br><br>
+<br><br> -->
 
 
 
@@ -406,7 +391,7 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 <br><br>
 
 
-## 0. 
+<!-- ## 0. 
 
 내용
 
@@ -416,12 +401,12 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 
 ```
 
-<br><br>
+<br><br> -->
 
 
 
 
-## ?. 차원 축소
+## 4. 차원 축소
 
 차원의 저주를 피하기 위해 알고리즘을 적용하기 전에 차원 축소를 진행한다. 
 주로 고차원의 데이터(10이상)에서 진행 된다.
@@ -443,7 +428,7 @@ ElasticNet 모델은 릿지와 라쏘를 동시에 충족하는 제약 조건을
 
 
 
-## scikit-learn algorithm cheat-sheet
+## 10. scikit-learn algorithm cheat-sheet
 
 ![scikit-learn algorithm cheat-sheet](https://scikit-learn.org/stable/_static/ml_map.png)
 

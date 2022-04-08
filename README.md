@@ -7,7 +7,7 @@
 3. 22.04.08 사이드바 구조 변경 및 디렉토리 추가작업 진행 
 
 2. 22.04.06 최신버전으로 업데이트
-- [Is it possible to freeze the position of panel book-header](https://github.com/sighingnow/jekyll-gitbook/issues/18)
+    - [Is it possible to freeze the position of panel book-header](https://github.com/sighingnow/jekyll-gitbook/issues/18)
 
 1. 22.03.22 블로그 초기화 후 최신버전으로 업데이트
     - 검색기능 수정

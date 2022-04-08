@@ -95,6 +95,7 @@ collections:
     output: true
     permalink: /:collection/:path/
     order:
+      - 2022-04-06-Feature-Scalining.md
 
   Analysis:
     output: true
