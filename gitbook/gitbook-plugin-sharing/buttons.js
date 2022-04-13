@@ -22,7 +22,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://www.google.com/');
-                // window.open('https://plus.google.com/share?url='+encodeURIComponent(location.href));
+                // window.open('https://plus.google.com/share?url='+odeURIComponent(location.href));
             }
         },
         'weibo': {

@@ -24,6 +24,11 @@ baseurl:          'https://jerrykim91.github.io' #'/Jerry's_Codebook' # the subp
 
 rss:              RSS
 
+
+tracker:
+  google_analytics: "G-M2VSGWT6VH" #"<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
+
+
 toc:
   enabled: true
   h_min: 1
