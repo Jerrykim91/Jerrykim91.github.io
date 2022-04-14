@@ -109,3 +109,8 @@ collections:
       # 아래부터 상위에 노출됨 
       - 2022-03-31-Pandas_2.md
       - 2021-10-15-1.1.Pandas_1.md
+
+  Web:
+    output: true
+    permalink: /:collection/:path/
+    # order:
