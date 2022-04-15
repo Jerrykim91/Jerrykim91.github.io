@@ -22,7 +22,7 @@ layout: post
 
 ---
 
-<center><img src="..\img\img.jpeg" width="400" height="300"></center>
+<center><img src="..\..\img\img.jpeg" width="400" height="300"></center>
 
 ---
 
