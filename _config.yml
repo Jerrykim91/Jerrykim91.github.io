@@ -76,10 +76,10 @@ utterances:
 
 # 상위 디렉토리 추가 
 collections:
-  # Intro:
-  #   output: true
-  #   permalink: /:collection/:path/
-  #   order:
+  Intro:
+    output: true
+    permalink: /:collection/:path/
+    order:
 
   # Pages:
   #   output: true
