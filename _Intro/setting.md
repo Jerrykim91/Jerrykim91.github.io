@@ -1,8 +1,8 @@
 ---
-title: Secret Page🙄
+title: Setting🙄
 author: Jerry
 layout: post
-permalink: /kim/
+# permalink: /about/
 ---
 
 

@@ -2,6 +2,7 @@
 title: About Me🙄
 author: Jerry
 layout: post
+permalink: /about/
 ---
 
 
