@@ -78,7 +78,7 @@ utterances:
 collections:
   Intro:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
     order:
 
   # Pages:

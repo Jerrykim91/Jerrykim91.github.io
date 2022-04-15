@@ -24,7 +24,7 @@
                 <!-- 하위 목차 -->
                 <!-- <a href="{{site.baseurl}}" style="color: inherit;">{{ site.title | escape }}</a> -->
                 <a href="{{site.baseurl}}" style="color: inherit; font-weight: bold;">🏡 HOME</a>
-                <a href="{{site.baseurl}}/Intro/about/" style="color: inherit; font-weight: bold;" target="_blank">🖐 AboutMe</a>
+                <a href="{{site.baseurl}}/about/" style="color: inherit; font-weight: bold;" target="_blank">🖐 AboutMe</a>
                 <a href="https://jerrykim91.github.io/PortfolioPage/" style="color: inherit; font-weight: bold;" target="_blank">👩‍💻 PortfolioPage</a>
                 
                 <!-- <a href="https://github.com/jerrykim91" style="color: inherit; font-weight: bold;" target="_blank">👩‍💻 Github</a> -->
@@ -64,8 +64,10 @@
                         {% endif %}
                         
                         {% if site.toc.enabled %}
-                            {% if page.url == post.url %}
-                                {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                            {% if collection.label != "Intro" %}
+                                {% if page.url == post.url %}
+                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                {% endif %}
                             {% endif %}
                         {% endif %}
 
@@ -80,6 +82,9 @@
             &nbsp; <a class="btn-open-popup" type="button" style="cursor:pointer">&nbsp; ☕ 커피 한잔 👉 &nbsp;</a>
             
         </ul>
+        <br>
+        <br>
+        <br>
     </nav>
 </div>
 
