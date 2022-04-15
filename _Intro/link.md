@@ -1,8 +1,8 @@
 ---
-title: Secret Page🙄
+title: Secret Page -  Link🙄
 author: Jerry
 layout: post
-permalink: /kim/
+permalink: /link/
 ---
 
 
@@ -12,3 +12,12 @@ permalink: /kim/
 <a href="https://hits.seeyoufarm.com">
                         <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
 
+
+
+# Link                        
+
+[구글 애널리틱스][1]
+
+
+
+[1]: https://analytics.google.com

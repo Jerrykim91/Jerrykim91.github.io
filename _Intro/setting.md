@@ -2,7 +2,7 @@
 title: Setting🙄
 author: Jerry
 layout: post
-# permalink: /about/
+permalink: /set/
 ---
 
 
@@ -12,3 +12,13 @@ layout: post
 <a href="https://hits.seeyoufarm.com">
                         <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
 
+
+### [구글 애널리틱스][1]
+### [GIT_sighingnow][2]
+### [티스토리][3]
+
+
+
+[1]: https://analytics.google.com
+[2]: https://github.com/sighingnow/jekyll-gitbook
+[3]: https://jerrykim91.tistory.com/
