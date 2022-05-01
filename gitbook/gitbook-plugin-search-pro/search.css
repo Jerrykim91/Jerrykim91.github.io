@@ -36,6 +36,9 @@
   #book-search-results.no-results .search-results .no-results {
     display: block;
   }
+  /* #book-search-results span.search-highlight-keyword {
+    background: #ff0;
+  } */
   #book-search-results span.search-highlight-keyword {
     background: #ff0;
   }
