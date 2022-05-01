@@ -38,8 +38,7 @@ layout: home
 
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1203356691924162"
-     crossorigin="anonymous"></script>
+
      
 
 <!-- - 언제 어디서나 빠르게 작성하고 읽기위해 만든 페이지입니다.  -->
