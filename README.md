@@ -4,7 +4,12 @@
 
 <br>
 
-3. 22.04.08 사이드바 구조 변경 및 디렉토리 추가작업 진행 
+4. 22.05.01 모바일 검색기능 추가 및 애드센스 추가 (검토중) 
+    - 22.04.12  모바일 기능 추가 요청 - https://github.com/sighingnow/jekyll-gitbook/issues/22
+    - 22.05.01 개선된 모바일 기능 추가 -> ver 2.2.0
+    - 애드센스 확정시 Backup 버전 업데이트 예정 -> ver 2.2.1
+
+3. 22.04.08 사이드바 구조 변경 및 디렉토리 추가 작업 진행 
 
 2. 22.04.06 최신버전으로 업데이트
     - [Is it possible to freeze the position of panel book-header](https://github.com/sighingnow/jekyll-gitbook/issues/18)
@@ -23,8 +28,8 @@
 <!-- #  My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/) -->
 
 - My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/)
-- Base Theme. : https://sighingnow.github.io/jekyll-gitbook/
-- [Download Base Theme](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
+- Base Theme Git Blog(jekyll-gitbook). : https://sighingnow.github.io/jekyll-gitbook/
+- [Download Here jekyll-gitbook Base Theme](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
 
 <br>
 
@@ -41,8 +46,5 @@
 
 
 <!-- https://github.com/algolia/algoliasearch-client-javascript -->
-
 <!-- https://www.algolia.com/apps/SX0PUH59XX/explorer/browse/Jerry's_CodeBook?searchMode=search -->
-
-
 <!-- https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html -->

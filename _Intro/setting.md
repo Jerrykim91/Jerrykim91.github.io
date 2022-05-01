@@ -14,11 +14,13 @@ permalink: /set/
 
 
 ### [구글 애널리틱스][1]
-### [GIT_sighingnow][2]
-### [티스토리][3]
+### [구글 애드센스][2]
+### [GIT_sighingnow][3]
+### [티스토리][4]
 
 
 
 [1]: https://analytics.google.com
-[2]: https://github.com/sighingnow/jekyll-gitbook
-[3]: https://jerrykim91.tistory.com/
+[2]: https://www.google.com/adsense/new/u/0/pub-1203356691924162/onboarding
+[3]: https://github.com/sighingnow/jekyll-gitbook
+[4]: https://jerrykim91.tistory.com/
