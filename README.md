@@ -4,6 +4,10 @@
 
 <br>
 
+5. 24.01.30 블로그 새단장(작업 중)
+    - 기능 업데이트 예정 
+    - 카테고리 수정 예정 
+
 4. 22.05.01 모바일 검색기능 추가 및 애드센스 추가 (검토중) 
     - 22.04.12  모바일 기능 추가 요청 - https://github.com/sighingnow/jekyll-gitbook/issues/22
     - 22.05.01 개선된 모바일 기능 추가 -> ver 2.2.0
@@ -29,6 +33,7 @@
 
 - My Blog. : [Jerrykim91.github.io](https://Jerrykim91.github.io/)
 - Base Theme Git Blog(jekyll-gitbook). : https://sighingnow.github.io/jekyll-gitbook/
+                                master : https://github.com/sighingnow/jekyll-gitbook/
 - [Download Here jekyll-gitbook Base Theme](https://github.com/sighingnow/jekyll-gitbook/archive/master.zip)
 
 <br>
