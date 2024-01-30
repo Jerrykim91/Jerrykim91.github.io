@@ -85,7 +85,7 @@ collections:
   #   permalink: /:collection/:path/
   #   order:
 
-  기록:
+  History:
     output: true
     permalink: /:collection/:path/
     order:
