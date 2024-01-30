@@ -4,15 +4,13 @@ longtitle:        Jerry's CodeBook! #Jekyll Gitbook
 author:           jerrykim91 #HE Tao
 email:            jerrykim91.pub@gmail.com #sighingnow@gmail.com
 description: >
-  This is jerry CodeBook!
+  어서오시게
 # Build Jekyll site with the GitBook style.
 
 version:          1.0
 gitbook_version:  3.2.3
-github_username:  jerrykim91
 
-# url:              'https://sighingnow.github.io'
-# baseurl:          '/jekyll-gitbook'
+github_username:  jerrykim91
 
 # 사이트 업로드시
 url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
@@ -64,6 +62,7 @@ regenerate:       true
 
 plugins:
   - jekyll-feed
+  - jekyll-readme-index
   - jemoji
 
 
@@ -86,31 +85,30 @@ collections:
   #   permalink: /:collection/:path/
   #   order:
 
-  MachineVision:
+  기록:
     output: true
     permalink: /:collection/:path/
     order:
 
-  Python:
+  자주쓰는코드:
     output: true
     permalink: /:collection/:path/
     order:
 
-  MachineLearning:
+  정리:
     output: true
     permalink: /:collection/:path/
     order:
-      - 2022-04-06-Feature-Scalining.md
 
-  Analysis:
-    output: true
-    permalink: /:collection/:path/
-    order:
-      # 아래부터 상위에 노출됨 
-      - 2022-03-31-Pandas_2.md
-      - 2021-10-15-1.1.Pandas_1.md
+  # Analysis:
+  #   output: true
+  #   permalink: /:collection/:path/
+  #   order:
+  #     # 아래부터 상위에 노출됨 
+  #     - 2022-03-31-Pandas_2.md
+  #     - 2021-10-15-1.1.Pandas_1.md
 
-  Web:
-    output: true
-    permalink: /:collection/:path/
+  # Web:
+  #   output: true
+  #   permalink: /:collection/:path/
     # order:
