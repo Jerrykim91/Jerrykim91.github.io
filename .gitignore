@@ -1,5 +1,9 @@
 _drafts/
 _site/
+_note/  
+
+# _note : 업로드 전 확인 용도 및 미완성본 보유
+
 .sass-cache/
 .jekyll-cache
 .jekyll-metadata

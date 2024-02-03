@@ -85,4 +85,4 @@ plugins:
   - jemoji
   - jekyll-polyglot
 
-future : true
+# future : true  # 미래의 포스트 보여주는 옵션
