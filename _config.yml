@@ -1,36 +1,17 @@
 # Configurations
-title:            Jerry's CodeBook! #Jekyll Gitbook
-longtitle:        Jerry's CodeBook! #Jekyll Gitbook
-author:           jerrykim91 #HE Tao
-email:            jerrykim91.pub@gmail.com #sighingnow@gmail.com
+title:            Do it
+longtitle:        Just Do it. That's me
+author:           hyowon
+email:            sun4131@gmail.com
 description: >
-  어서오시게
-# Build Jekyll site with the GitBook style.
+  몰라
 
 version:          1.0
-gitbook_version:  3.2.3
 
-github_username:  jerrykim91
-
-# 사이트 업로드시
-url:              'https://jerrykim91.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl:          'https://jerrykim91.github.io' #'/Jerry's_Codebook' # the subpath of your site, e.g. /blog -> 타이틀 링트 그리고 베이스 링크
-
-# 로컬 작업시
-# url:              'http://127.0.0.1:4000/' # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl:          '' # 로컬 작업시 
-
-rss:              RSS
-
-
-tracker:
-  google_analytics: "G-M2VSGWT6VH" #"<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
-
-
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 2 #3
+# url:              'https://jerrykim91.github.io'
+url:              'http://localhost:4000'
+baseurl:          ''
+# rss:              RSS
 
 # markdown render engine.
 markdown:         kramdown
@@ -44,71 +25,64 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
-syntax_highlighter_style: github
-# syntax_highlighter_style 옵션(rouge참조) : {colorful:흐리멍텅함- 내취향아님},{github:}
+# pandoc:
+#   format: html5
+#   highlight-style: tango
+#   extensions:
+#     - smart
+#     - mathjax
 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-# permalink:        /:categories/:year-:month-:day-:title:output_ext
+permalink:        none
+
+excerpt_separator: "<!--more-->"
+
+# Navigation
+navigation:
+- text: Blog
+  url: /blog/
+- text: Archive
+  url: /archive/
+- text: Github
+  url: https://github.com/jerrykim91
+  external: true
 
 exclude:
   - _drafts
 
+#Social Media links
+# social:
+#   github:         sighingnow
+#   facebook:       sighingnow
 
+# Google Analytics
+# gahandler:        'UA-124803592-1'
+
+# CNZZ
+# cnzzhandler:      '1277366039'
+
+# Disqus
+# disqushandler:    'sighingnow'
+
+# Blog Configurations
+paginate:         10 # Posts per page on the blog index
+paginate_path:    '/blog/page:num'
 destination:      ./_site
-incremental:      false
-regenerate:       true
+incremental:      true
+regenerate:       false
+
+languages: ["en", "ko"] # 지원하고자 하는 언어
+default_lang: "ko" # 컨텐츠의 기본 언어
+exclude_from_localization: ["image"] # 루트 레벨 폴더 중 다국어 기능 제외 시킬 폴더
+parallel_localizaion: false # 윈도우에서는 버그가 있어서 false로 해야 동작한다고 합니다.
 
 plugins:
   - jekyll-feed
-  - jekyll-readme-index
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jemoji
+  - jekyll-polyglot
 
-
-utterances:
-  enable: true
-  repo: Jerrykim91/blog-comment
-  issue_term: title
-  theme: github-light
-
-
-# 상위 디렉토리 추가 
-collections:
-  Intro:
-    output: true
-    permalink: /:collection/:path/
-    order:
-
-  # Pages:
-  #   output: true
-  #   permalink: /:collection/:path/
-  #   order:
-
-  History:
-    output: true
-    permalink: /:collection/:path/
-    order:
-
-  자주쓰는코드:
-    output: true
-    permalink: /:collection/:path/
-    order:
-
-  정리:
-    output: true
-    permalink: /:collection/:path/
-    order:
-
-  # Analysis:
-  #   output: true
-  #   permalink: /:collection/:path/
-  #   order:
-  #     # 아래부터 상위에 노출됨 
-  #     - 2022-03-31-Pandas_2.md
-  #     - 2021-10-15-1.1.Pandas_1.md
-
-  # Web:
-  #   output: true
-  #   permalink: /:collection/:path/
-    # order:
+future : true
