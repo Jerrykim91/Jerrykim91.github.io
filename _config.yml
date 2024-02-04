@@ -1,6 +1,6 @@
 # Configurations
 title:            Do it
-longtitle:        Just Do it. That's me
+longtitle:        Just Do it. That's me.
 author:           hyowon
 email:            sun4131@gmail.com
 description: >
@@ -8,8 +8,8 @@ description: >
 
 version:          1.0
 
-# url:              'https://jerrykim91.github.io'
-url:              'http://localhost:4000'
+url:              'https://jerrykim91.github.io'
+# url:              'http://localhost:4000'
 baseurl:          ''
 # rss:              RSS
 
