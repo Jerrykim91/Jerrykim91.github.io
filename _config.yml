@@ -48,6 +48,9 @@ navigation:
 - text: Github
   url: https://github.com/jerrykim91
   external: true
+# - text: Portfolio
+#   url: 
+#   external: true
 
 exclude:
   - _drafts
