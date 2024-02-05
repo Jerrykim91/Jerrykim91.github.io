@@ -1,5 +1,5 @@
 ---
-title: FastAPI&Flask차이
+title: FastAPI & Flask차이
 author: Jerry
 date: 2024-02-05 # 업로드 
 tag: [programming-language]
@@ -79,13 +79,12 @@ Starlette은 **HTTP 웹 프레임워크**다. ****그래서 Flask에 있는 기�
 
 - FastAPI 인기를 얻고 있는 이유는 뭘까?
     
-     1.  의존성 주입(DI) 위주의 설계로, DB 등 의존성 관리가 편리하고 버그 위험이 적다
-    
-    1. 동시성 기반의 비동기 동작으로 충분히 빠른 성능을 가진다. 
-    2. 파이다이나믹 기반의 벨리데이션(Validation)이 잘 동작한다.
-    3. Swagger(OpenAPI) 기반의 자동 문서화가 효율적
-    4. Starlette 을 갖다쓴 덕분에 WebSocket 과 같은 빌트인 기능이 충분
-    5. 공식문서가 훌륭하다?
+    1.  의존성 주입(DI) 위주의 설계로, DB 등 의존성 관리가 편리하고 버그 위험이 적다
+    2. 동시성 기반의 비동기 동작으로 충분히 빠른 성능을 가진다. 
+    3. 파이다이나믹 기반의 벨리데이션(Validation)이 잘 동작한다.
+    4. Swagger(OpenAPI) 기반의 자동 문서화가 효율적
+    5. Starlette 을 갖다쓴 덕분에 WebSocket 과 같은 빌트인 기능이 충분
+    6. 공식문서가 훌륭하다?
 
 (**자체 피셜**) FastAPI는 파이썬 웹 프레임워크중 가장 빠르며 빠른 속도로 Node.js 혹은 Go와 대등 할 정도라고 하는데 
 
@@ -97,30 +96,38 @@ Starlette은 **HTTP 웹 프레임워크**다. ****그래서 Flask에 있는 기�
 
 - 동기와 비동기
     
-    동기(**Synchronous**): 서버에서 요청을 보냈을 때 응답이 돌아와야 다음 동작을 수행할 수 있음. 
+    동기(**Synchronous**): 서버에서 요청을 보냈을 때 응답이 돌아와야 다음 동작을 수행 
     
-    즉 A작업이 모두 진행 될 때까지 B작업은 대기
+    즉, A 작업이 모두 진행 될 때까지 B 작업은 대기
     
-    비동기(**Asynchronous**): 반대로 요청을 보냈을 때 응답 상태와 상관없이 다음 동작을 수행. 
+    비동기(**Asynchronous**): 반대로 요청을 보냈을 때 응답 상태와 상관없이 다음 동작을 수행 
     
-    즉 A작업이 시작하면 동시에 B작업이 실행된다. A작업은 결과 값이 나오는대로 출력
+    즉 A 작업이 시작하면 동시에 B작업이 실행된다.
+    A 작업은 결과 값이 나오는대로 출력 
     
-    **동기**는 **비동기** 보다 간단하고 직관적이다. 하지만 결과가 주어질 때까지 아무것도 못하고 대기 해야하는 문제가 있다. 
+
+    **동기**는 **비동기** 보다 간단하고 직관적이다. 
+    하지만 결과가 주어질 때까지 아무것도 못하고 대기 해야하는 문제가 있다. 
     
     반면에 **비동기**는 **동기**보다 복잡하지만 결과가 주어지는데 시간이 걸려도 그 시간 동안 다른 작업을 할 수 있어서 보다 효율적일 수 있다. 
     
+<br>
 
-최근 들어서는 FastAPI가  Flask를 대체 가능하다는 이야기들이 나오고 있다. 
+최근 들어서는 FastAPI가 Flask를 대체 가능하다는 이야기들이 나오고 있다. 
 
 최근의 어느 한 블로그에서 **[FastAPI의 시대. 아직도 Flask 쓰시나요?](https://planb.hashnode.dev/fastapi-flask)** 라는 주제로 글이 올라오기도 했다.
 
-결론은 FastAPI와 Flask를 비교하는 것이 틀렸다는 것이다. FastAPI와 Flask의 사용 범위는 다르다는 것이다. 뭐  **[FastAPI**로 만든 웹사이트](https://www.notion.so/c5c27bafbd694a9385a2ea0a900cf241?pvs=21)도 나와있긴 하지만 …
+결론은 FastAPI와 Flask를 비교하는 것이 틀렸다는 것이다. FastAPI와 Flask의 사용 범위는 다르다는 것이다. 
+뭐... 
+**[FastAPI로 만든 웹사이트](https://www.notion.so/c5c27bafbd694a9385a2ea0a900cf241?pvs=21)**도 나와있긴 하지만 ...
+
+<br>
 
 파이썬 언어에서 Flask는 아직까지도 유연성이 많이 필요한 다른 HTTP 작업에 적합한 선택이다. 
 
 아직까지는 그렇다. 
 
-그리고 **FastAPI가 API용으로써** Flask보다 훨씬 나은 프레임워크 라는 것
+그리고 **FastAPI가 API용으로써** Flask보다 훨씬 나은 프레임워크 라는 것.
 
 결국은 각자의 위치에서 두 프레임워크는 각자의 범위에서 최선을 다하고 있는 것이다.  
 
@@ -130,12 +137,16 @@ Starlette은 **HTTP 웹 프레임워크**다. ****그래서 Flask에 있는 기�
 
 예외 처리가 적절하게 되어 있지 않으면 높은 확률로 사망하곤 한다. 
 
-너무나 당연하게 사용자가 항상 올바른 값을 줄 것이라고 가정을 두고 생각해서 그렇지 않은가 싶다. 
+너무나 당연하게 사용자가 항상 올바른 값을 줄 것이라고 가정을 두고 생각해서 그렇지 않은가 싶은데
 
 참고로 플라스크의 경우 클라이언트로부터 전달되는 데이터의 유효성을 검증을 위해서 추가로
- 확장 패키지([Flask-WTF](https://flask-wtf.readthedocs.io/en/0.15.x/))를 사용 해야 한다.  *`Flask-WTF`패키지 이름이다 … 오해 말자…. *
+ 확장 패키지([Flask-WTF](https://flask-wtf.readthedocs.io/en/0.15.x/))를 사용 해야 한다. 
+
+*`Flask-WTF`패키지 이름이다 … 오해 말자….*
 
 ![Flask-WTF](https://flask-wtf.readthedocs.io/en/0.15.x/_images/flask-wtf.png)
+
+<br>
 
 암튼 그렇다? 
 
@@ -150,8 +161,9 @@ FastAPI에는 기본적(기능적)으로 데이터 유효성 검사가 내장되
 <br>
 
 ### 결론
+---------
 
----
+<br>
 
 FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌면 Flask보다 더 쉬운 코드를 지향할지도 모르겠다.  
 
@@ -161,16 +173,18 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 
 이렇게 확인해보니 서로의 강점이 확실해 보인다. 
 
-둘의 차이점이라고 하면 WSGI를 지원하는지 ASGI를 지원하는 지라고 생각된다. 
+<br>
 
-각 상황에 따라 서버를 구현할 때 WSGI서버를 구현한다면 Flask,  ASGI서버를 쓰고 싶다면 FastAPI를 사용한다면 조금 더 나은 결과를 얻지 않을까 생각된다. 
+둘의 차이점이라고 하면 WSGI를 지원하는지 혹은 ASGI를 지원하는 지라고 생각된다. 
+
+각 상황에 따라 서버를 구현할 때 WSGI서버를 구현한다면 Flask, ASGI서버를 쓰고 싶다면 FastAPI를 사용한다면 조금 더 나은 결과를 얻지 않을까 생각된다. 
 
 <br>
 
  
 
-## 참조
-
+ 참조
+-----
 
 ### [이론]
 
@@ -181,7 +195,9 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 5. **[KR] FastAPI의 시대. 아직도 Flask 쓰시나요? →** https://planb.hashnode.dev/fastapi-flask
 6. **[KR] Flask에서 FastAPI로 전환하기 →** https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46
 
----
+<br>
+
+-----
 
 ### [기타]
 
@@ -189,4 +205,3 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 2. **[ENG] 종속성_Dependency Injection Demystified →** https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified
 3. **[KR] API 와 Endpoint →** https://blog.naver.com/ghdalswl77/222401162545 
 4. **[KR] 백엔드 전체를 FastAPI로 개발한 숏링크 서비스** → https://app.abit.ly/
-
