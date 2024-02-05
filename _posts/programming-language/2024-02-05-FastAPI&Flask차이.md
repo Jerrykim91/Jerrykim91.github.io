@@ -39,6 +39,7 @@ layout: post
     - 웹 애플리케이션을 개발하는데 사용한다.
     - 예를들면 응용프로그램을 작성하는데 도움이 되는 모듈 라이브러리 클래스 및 함수의 모음이라고 보면 된다.
     - 웹 프레임워크로는 피라미드, 체리파이,보틀, 토네이도 등등….이 있다. 
+
     <br>
 
 API 부분에서는 이제까지는 Flask가 장고보다는 압도적이었다. 
@@ -46,6 +47,7 @@ API 부분에서는 이제까지는 Flask가 장고보다는 압도적이었다.
 장고에서는 Django REST framework, 이것도 Heavy하니 훨씬 간편한 FlaskREST framework이 나오면서는  API를 Flask로 빠르게 만들어 버린다.  
 
 그러다가 더한 웹 프레임워크가 나오는데 그것이 바로 FastAPI이다. 
+
 <br>
 
 Flask는 django의 복잡함?*을 없애기는 했지만, async와 속도를 해결하진 못했다. 
@@ -58,6 +60,7 @@ Flask는 django의 복잡함?*을 없애기는 했지만, async와 속도를 해
 그동안 django와 Flask가 공존해 왔다면, 앞으로는 django, Flask 그리고 FastAPI가 공존할 것 같다.
 
 자, 그럼 FastAPI는 무엇이냐 ? 
+
 <br>
 
 ## FastAPI
@@ -96,6 +99,7 @@ Starlette은 **HTTP 웹 프레임워크**다. 그래서 Flask에 있는 기능�
     4. Swagger(OpenAPI) 기반의 자동 문서화가 효율적
     5. Starlette 을 갖다쓴 덕분에 WebSocket 과 같은 빌트인 기능이 충분
     6. 공식문서가 훌륭하다? 
+
     <br>
 
 (**자체 피셜**) FastAPI는 파이썬 웹 프레임워크중 가장 빠르며 빠른 속도로 Node.js 혹은 Go와 대등 할 정도라고 하는데 
@@ -155,6 +159,7 @@ Starlette은 **HTTP 웹 프레임워크**다. 그래서 Flask에 있는 기능�
  확장 패키지([Flask-WTF](https://flask-wtf.readthedocs.io/en/0.15.x/))를 사용 해야 한다. 
 
 *`Flask-WTF`패키지 이름이다 … 오해 말자….*
+
 <br>
 
 ![Flask-WTF](https://flask-wtf.readthedocs.io/en/0.15.x/_images/flask-wtf.png)
@@ -194,7 +199,7 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
  
 
 ## 참조
-
+---------
 
 ### [이론]
 
@@ -206,6 +211,7 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 6. **[KR] Flask에서 FastAPI로 전환하기** [https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46](https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46)
 
 <br>
+
 -----
 
 <br>
@@ -217,6 +223,11 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 3. **[KR] API 와 Endpoint** : [https://blog.naver.com/ghdalswl77/222401162545](https://blog.naver.com/ghdalswl77/222401162545)
 4. **[KR] 백엔드 전체를 FastAPI로 개발한 숏링크 서비스** : [https://app.abit.ly/](https://app.abit.ly/)
 
+<br>
+
+-----
+
+<br>
 
 
 
