@@ -38,7 +38,8 @@ layout: post
 - 웹 개발 프레임워크란 ??
     - 웹 애플리케이션을 개발하는데 사용한다.
     - 예를들면 응용프로그램을 작성하는데 도움이 되는 모듈 라이브러리 클래스 및 함수의 모음이라고 보면 된다.
-    - 웹 프레임워크로는 피라미드, 체리파이,보틀, 토네이도 등등….이 있다. <br>
+    - 웹 프레임워크로는 피라미드, 체리파이,보틀, 토네이도 등등….이 있다. 
+    <br>
 
 API 부분에서는 이제까지는 Flask가 장고보다는 압도적이었다. 
 
@@ -56,7 +57,8 @@ Flask는 django의 복잡함?*을 없애기는 했지만, async와 속도를 해
 <br>
 그동안 django와 Flask가 공존해 왔다면, 앞으로는 django, Flask 그리고 FastAPI가 공존할 것 같다.
 
-자, 그럼 FastAPI는 무엇이냐 ? <br>
+자, 그럼 FastAPI는 무엇이냐 ? 
+<br>
 
 ## FastAPI
 
@@ -93,7 +95,8 @@ Starlette은 **HTTP 웹 프레임워크**다. 그래서 Flask에 있는 기능�
     3. 파이다이나믹 기반의 벨리데이션(Validation)이 잘 동작한다.
     4. Swagger(OpenAPI) 기반의 자동 문서화가 효율적
     5. Starlette 을 갖다쓴 덕분에 WebSocket 과 같은 빌트인 기능이 충분
-    6. 공식문서가 훌륭하다?<br>
+    6. 공식문서가 훌륭하다? 
+    <br>
 
 (**자체 피셜**) FastAPI는 파이썬 웹 프레임워크중 가장 빠르며 빠른 속도로 Node.js 혹은 Go와 대등 할 정도라고 하는데 
 
@@ -103,6 +106,7 @@ Starlette은 **HTTP 웹 프레임워크**다. 그래서 Flask에 있는 기능�
 
 - Uvicorn은 프로덕션에 사용되는 **ASGI서버**
     - **ASGI**(Asynchronous Server Gateway Interface)중 한 종류인 Uvicorn(유바이콘/유비콘)와 함께 비동기적인 형태로 돌아간다. (동작한다.)
+<br>
 
 - 동기와 비동기
     
@@ -135,9 +139,7 @@ Starlette은 **HTTP 웹 프레임워크**다. 그래서 Flask에 있는 기능�
 
 파이썬 언어에서 Flask는 아직까지도 유연성이 많이 필요한 다른 HTTP 작업에 적합한 선택이다. 
 
-아직까지는 그렇다. 
-
-그리고 **FastAPI가 API용으로써** Flask보다 훨씬 나은 프레임워크 라는 것.
+아직까지는 그렇다. 그리고 **FastAPI가 API용으로써** Flask보다 훨씬 나은 프레임워크 라는 것.
 
 결국은 각자의 위치에서 두 프레임워크는 각자의 범위에서 최선을 다하고 있는 것이다.  
 
@@ -191,18 +193,19 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 
  
 
-참조
-------------
+## 참조
+
 
 ### [이론]
 
-1. **[KR] FastAPI의 시대. 아직도 Flask 쓰시나요? →** : https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified
-2. **[KR] FLASK에서 FASTAPI로 간 이유 →** : https://tech.madup.com/FastAPI/
-3. **[ENG] The Ultimate Face-off: Flask vs. FastAPI →** https://developer.vonage.com/blog/21/08/10/the-ultimate-face-off-flask-vs-fastapi
-4. **[KR] 파이썬 웹 API 개발, 이제 FastAPI →** http://egloos.zum.com/madchick/v/4200740
-5. **[KR] FastAPI의 시대. 아직도 Flask 쓰시나요? →** https://planb.hashnode.dev/fastapi-flask
-6. **[KR] Flask에서 FastAPI로 전환하기 →** https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46
+1. **[KR] FastAPI의 시대. 아직도 Flask 쓰시나요?** : [https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified](https://www.jamesshore.com/v2/blog/2006/dependency-injection-demystified)
+2. **[KR] FLASK에서 FASTAPI로 간 이유** : [https://tech.madup.com/FastAPI/](https://tech.madup.com/FastAPI/)
+3. **[ENG] The Ultimate Face-off: Flask vs. FastAPI** [https://developer.vonage.com/blog/21/08/10/the-ultimate-face-off-flask-vs-fastapi](https://developer.vonage.com/blog/21/08/10/the-ultimate-face-off-flask-vs-fastapi)
+4. **[KR] 파이썬 웹 API 개발, 이제 FastAPI** [http://egloos.zum.com/madchick/v/4200740](http://egloos.zum.com/madchick/v/4200740)
+5. **[KR] FastAPI의 시대. 아직도 Flask 쓰시나요?** [https://planb.hashnode.dev/fastapi-flask](https://planb.hashnode.dev/fastapi-flask)
+6. **[KR] Flask에서 FastAPI로 전환하기** [https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46](https://blog.hopsoffice.com/a387f4a1-a738-425e-a3c1-13af488f5c46)
 
+<br>
 -----
 
 <br>
