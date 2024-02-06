@@ -1,23 +1,18 @@
 ---
 title: FastAPI & Flask 차이
-author: Jerry
+author: Jerrykim91
 date: 2024-02-05 # 업로드 
 tag: [programming-language]
 category: programming-language
 layout: post
 ---
 
-<h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
-<!-- 코드 상단 :  -->
-<a href="https://hits.seeyoufarm.com">
-<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
+도대체 뭐가 다른걸까?
+FastAPI 와 flask의 API에 대해 알아보고자 한다.
 
-<br>
-
+<!--more-->
 
 ## FastAPI & Flask 차이
-
-최근에 갑자기 대두 되고 있는 FastAPI 와 flask에 대해 알아보고자 한다.
 
  
 ![FastAPIvsFlask](https://d226lax1qjow5r.cloudfront.net/blog/blogposts/the-ultimate-face-off-flask-vs-fastapi/flask-vs-fastapi_1200x600.png)
@@ -198,7 +193,7 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 
  
 
-## 참조
+## Reference
 ---------
 
 ### [이론]
@@ -230,6 +225,12 @@ FastAPI는 Flask와 유사하게 가볍고 쉬운 코드를 지향한다. 어쩌
 <br>
 
 
+<h5><p align="right"> {{ page.date | date_to_string }} </p></h5>
+<!-- 코드 상단 :  -->
+<a href="https://hits.seeyoufarm.com">
+<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Jerrykim91/jerrykim91.github.io"/></a> 
+
+<br>
 
 <!-- 코드 하단 -->
 <br>

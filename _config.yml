@@ -1,17 +1,17 @@
 # Configurations
 title:            Do it
 longtitle:        Just Do it. That's me.
-author:           hyowon
-email:            sun4131@gmail.com
+author:           jerrykim91
+email:            None
 description: >
-  몰라
+  공백.
 
 version:          1.0
 
 url:              'https://jerrykim91.github.io'
 # url:              'http://localhost:4000'
 baseurl:          ''
-# rss:              RSS
+rss:              RSS
 
 # markdown render engine.
 markdown:         kramdown
@@ -70,7 +70,7 @@ exclude:
 # disqushandler:    'sighingnow'
 
 # Blog Configurations
-paginate:         10 # Posts per page on the blog index
+paginate:         5 # Posts per page on the blog index
 paginate_path:    '/blog/page:num'
 destination:      ./_site
 incremental:      true
